@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 
 import Home from "./pages/Home";
 import Research from "./pages/Research";
@@ -17,33 +18,15 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-
-          <Route
-            path="/research"
-            element={<Research />}
-          />
-
-          <Route
-            path="/publications"
-            element={<Publications />}
-          />
-
-          <Route
-            path="/people"
-            element={<People />}
-          />
-
-          <Route
-            path="/people/:slug"
-            element={<Person />}
-          />
-
-          <Route
-            path="/about"
-            element={<About />}
-          />
+          <Route path="/research" element={<Research />} />
+          <Route path="/publications" element={<Publications />} />
+          <Route path="/people" element={<People />} />
+          <Route path="/people/:slug" element={<Person />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </main>
+
+      <Footer />
     </div>
   );
 }

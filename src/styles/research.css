@@ -19,7 +19,7 @@
 
 
 /* =========================================================
-   Section header
+   Section Header
    ========================================================= */
 
 .research-header {
@@ -65,7 +65,7 @@
 
 
 /* =========================================================
-   Domain grid
+   Domain Grid
    ========================================================= */
 
 .domain-grid {
@@ -78,7 +78,7 @@
 
 
 /* =========================================================
-   Domain card
+   Domain Card
    ========================================================= */
 
 .domain-card {
@@ -101,6 +101,12 @@
   background: var(--color-bg-card);
 
   overflow: hidden;
+
+  transition:
+    background var(--transition-normal),
+    border-color var(--transition-normal),
+    transform var(--transition-normal),
+    box-shadow var(--transition-normal);
 }
 
 .domain-card::before {
@@ -119,17 +125,21 @@
   transition: height var(--transition-slow);
 }
 
+.domain-card:hover {
+  background: var(--color-bg-card-hover);
+
+  transform: translateY(-2px);
+
+  box-shadow: var(--shadow-card);
+}
+
 .domain-card:hover::before {
   height: 100%;
 }
 
-.domain-card:hover {
-  transform: translateY(-2px);
-}
-
 
 /* =========================================================
-   Card top
+   Card Top
    ========================================================= */
 
 .domain-card-top {
@@ -180,7 +190,7 @@
 
 
 /* =========================================================
-   Card content
+   Card Content
    ========================================================= */
 
 .domain-card-content {
@@ -207,13 +217,13 @@
 
   color: var(--color-text-secondary);
 
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.75;
 }
 
 
 /* =========================================================
-   Card footer
+   Card Footer
    ========================================================= */
 
 .domain-card-footer {
@@ -238,19 +248,29 @@
   display: inline-flex;
   align-items: center;
 
-  min-height: 24px;
-  padding: 0 8px;
+  min-height: 26px;
+
+  padding: 0 9px;
 
   border: 1px solid var(--color-border);
 
   color: var(--color-text-muted);
 
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.6875rem;
   line-height: 1;
 
   letter-spacing: 0.04em;
   text-transform: uppercase;
+
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    background var(--transition-fast);
+}
+
+.domain-card:hover .domain-card-tag {
+  border-color: rgba(255, 255, 255, 0.11);
 }
 
 .domain-card-link {
@@ -259,22 +279,236 @@
   color: var(--color-text-muted);
 
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.6875rem;
   line-height: 1;
 
   letter-spacing: 0.07em;
   text-transform: uppercase;
 
-  transition: color var(--transition-fast);
+  transition:
+    color var(--transition-fast),
+    transform var(--transition-fast);
 }
 
 .domain-card-link:hover {
   color: var(--color-accent);
+
+  transform: translate(2px, -1px);
 }
 
 
 /* =========================================================
-   Responsive
+   Research Section Footer
+   ========================================================= */
+
+.research-section-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  padding-top: 28px;
+}
+
+.research-view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: var(--color-text-secondary);
+
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  line-height: 1;
+
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  transition:
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.research-view-all:hover {
+  color: var(--color-accent);
+
+  transform: translate(2px, -1px);
+}
+
+
+/* =========================================================
+   Standalone Research Page
+   ========================================================= */
+
+.research-page {
+  min-height: 100vh;
+
+  background: var(--color-bg);
+}
+
+
+/* =========================================================
+   Research Page Hero
+   ========================================================= */
+
+.research-page-hero {
+  position: relative;
+
+  padding-top: calc(
+    var(--navbar-height) + var(--space-24)
+  );
+
+  padding-bottom: var(--space-20);
+
+  border-bottom: 1px solid var(--color-border);
+
+  overflow: hidden;
+}
+
+.research-page-hero::after {
+  content: "";
+
+  position: absolute;
+
+  right: -180px;
+  bottom: -300px;
+
+  width: 600px;
+  height: 600px;
+
+  border-radius: 50%;
+
+  background: var(--color-accent);
+
+  filter: blur(130px);
+
+  opacity: 0.025;
+
+  pointer-events: none;
+}
+
+.research-page-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+
+  gap: 60px;
+
+  margin-top: 28px;
+}
+
+.research-page-title {
+  color: var(--color-text);
+
+  font-size: clamp(52px, 7vw, 92px);
+  line-height: 0.92;
+
+  font-weight: 700;
+
+  letter-spacing: -0.065em;
+}
+
+.research-page-intro {
+  align-self: end;
+
+  max-width: 400px;
+}
+
+.research-page-intro p {
+  color: var(--color-text-secondary);
+
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.research-page-index {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 34px;
+  padding-top: 14px;
+
+  border-top: 1px solid var(--color-border);
+
+  color: var(--color-text-muted);
+
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.research-page-index strong {
+  color: var(--color-text);
+
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   Research Page Content
+   ========================================================= */
+
+.research-page-content {
+  padding-block: var(--space-20) var(--space-32);
+}
+
+.research-page-section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-bottom: 42px;
+}
+
+.research-page-section-header p {
+  max-width: 430px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   Research Page CTA
+   ========================================================= */
+
+.research-page-cta {
+  padding-block: var(--space-20);
+
+  border-top: 1px solid var(--color-border);
+
+  background: var(--color-bg-elevated);
+}
+
+.research-page-cta-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+.research-page-cta h2 {
+  margin-top: 20px;
+
+  color: var(--color-text);
+
+  font-size: clamp(36px, 4.5vw, 58px);
+  line-height: 0.98;
+
+  font-weight: 700;
+
+  letter-spacing: -0.05em;
+}
+
+
+/* =========================================================
+   Responsive — Shared Research Section
    ========================================================= */
 
 @media (max-width: 900px) {
@@ -304,6 +538,40 @@
     margin-bottom: 55px;
   }
 }
+
+
+/* =========================================================
+   Responsive — Research Page
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .research-page-hero-grid {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .research-page-intro {
+    max-width: 600px;
+  }
+
+  .research-page-section-header {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .research-page-cta-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+
+/* =========================================================
+   Responsive — Mobile
+   ========================================================= */
 
 @media (max-width: 650px) {
   .research-section {
@@ -338,46 +606,36 @@
 
     gap: 18px;
   }
-}
 
-
-/* =========================================================
-   Research section footer
-   ========================================================= */
-
-.research-section-footer {
-  display: flex;
-  justify-content: flex-end;
-
-  padding-top: 28px;
-}
-
-.research-view-all {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-
-  color: var(--color-text-secondary);
-
-  font-family: var(--font-mono);
-  font-size: 10px;
-  line-height: 1;
-
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-
-  transition:
-    color var(--transition-fast),
-    transform var(--transition-fast);
-}
-
-.research-view-all:hover {
-  color: var(--color-accent);
-  transform: translate(2px, -1px);
-}
-
-@media (max-width: 650px) {
   .research-section-footer {
     justify-content: flex-start;
+  }
+
+  .research-page-hero {
+    padding-top: calc(
+      var(--navbar-height) + 70px
+    );
+
+    padding-bottom: 70px;
+  }
+
+  .research-page-title {
+    font-size: clamp(46px, 13vw, 68px);
+  }
+
+  .research-page-content {
+    padding-block: 60px 90px;
+  }
+
+  .research-page-cta {
+    padding-block: 70px;
+  }
+
+  .research-page-cta h2 {
+    font-size: 40px;
+  }
+
+  .research-page-cta .button {
+    width: 100%;
   }
 }

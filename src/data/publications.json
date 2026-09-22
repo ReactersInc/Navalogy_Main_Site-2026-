@@ -5,17 +5,10 @@
     "venue": "SN Computer Science",
     "volume": "7 (6), 631",
     "title": "A Hybrid Framework for Energy-Efficient Sensor Management in RF-Powered IoMT Systems",
-    "authors": [
-      "A Roy",
-      "H Deka",
-      "N Medhi"
-    ],
+    "authors": ["A Roy", "H Deka", "N Medhi"],
     "category": "Energy Optimization / IoMT",
-    "researchAreas": [
-      "iomt",
-      "energy"
-    ],
-    "description": "Combines data forecasting with reinforcement learning to dynamically schedule resource states and harvest ambient Radio Frequency signals.",
+    "researchAreas": ["iomt", "energy"],
+    "description": "Combines data forecasting with reinforcement learning (Double Deep Q-Networks) to dynamically schedule resource states and harvest ambient Radio Frequency signals cleanly.",
     "link": "https://www.researchgate.net/publication/408917308_A_Hybrid_Framework_for_Energy-Efficient_Sensor_Management_in_RF-Powered_IoMT_Systems",
     "featured": true
   },
@@ -25,18 +18,9 @@
     "venue": "Cluster Computing",
     "volume": "29 (5), 328",
     "title": "EDFS: Election-based decentralized fog scheduling for IoMT",
-    "authors": [
-      "R Ghosh",
-      "P Das",
-      "K Ray",
-      "VK Deka",
-      "TL Dutta",
-      "N Medhi"
-    ],
+    "authors": ["R Ghosh", "P Das", "K Ray", "VK Deka", "TL Dutta", "N Medhi"],
     "category": "IoMT & Healthcare",
-    "researchAreas": [
-      "iomt"
-    ],
+    "researchAreas": ["iomt"],
     "description": "Implements a voting-based distribution configuration to balance incoming real-time sensor streams across resource-constrained edge-fog installations.",
     "link": "https://www.researchgate.net/publication/406988387_EDFS_Election-based_decentralized_fog_scheduling_for_IoMT",
     "featured": true
@@ -47,40 +31,167 @@
     "venue": "Journal of Network and Systems Management",
     "volume": "34 (1), 1-32",
     "title": "Cross-DistBlock: Blockchain-Enabled Multi-stage Flow Verification in Multi-domain Software-Defined Networks",
-    "authors": [
-      "B Bargayary",
-      "N Medhi"
-    ],
+    "authors": ["B Bargayary", "N Medhi"],
     "category": "Blockchain / SDN Security",
-    "researchAreas": [
-      "blockchain",
-      "sdn-security"
-    ],
-    "description": "Engineers an immutable multi-stage security validation process for distributed software-defined network environments.",
+    "researchAreas": ["blockchain", "sdn-security"],
+    "description": "Engineers an immutable multi-stage security validation process using digital signature, non-rogue selection, and voting consensus inside secure distributed ledger controllers.",
     "link": "https://www.researchgate.net/publication/396620855_Cross-DistBlock_Blockchain-Enabled_Multi-stage_Flow_Verification_in_Multi-domain_Software-Defined_Networks",
+    "featured": false
+  },
+  {
+    "id": "pneumonia-risk-2025",
+    "year": 2025,
+    "venue": "IEEE International Conference on Advanced Networks",
+    "volume": "",
+    "title": "Early Pneumonia Risk Prediction using Internet of Medical Things and Machine Learning Techniques",
+    "authors": ["H Neog", "N Medhi", "R Radhakrishnan", "P Chakravarty"],
+    "category": "IoMT & Healthcare",
+    "researchAreas": ["iomt"],
+    "description": "Deploys localized supervised intelligence frameworks across physical sensor hubs to automatically parse biometric criteria for early lung inflammation trends.",
+    "link": "https://www.researchgate.net/publication/402468051_Early_Pneumonia_Risk_Prediction_using_Internet_of_Medical_Things_and_Machine_Learning_Techniques",
     "featured": false
   },
   {
     "id": "bred-2025",
     "year": 2025,
-    "venue": "GLOBECOM 2025",
+    "venue": "GLOBECOM 2025 - IEEE Global Communications Conference",
     "volume": "679-684",
     "title": "BReD: β-Distribution-Based Reputation for DDoS Attack Detection and Mitigation using SDN in VSNs",
-    "authors": [
-      "P Das",
-      "N Medhi",
-      "S Aziz",
-      "H Mahla",
-      "R Ghosh",
-      "K Ray",
-      "S Misra"
-    ],
+    "authors": ["P Das", "N Medhi", "S Aziz", "H Mahla", "R Ghosh", "K Ray", "S Misra"],
     "category": "SDN Security",
-    "researchAreas": [
-      "sdn-security"
-    ],
-    "description": "Establishes dynamic beta-distribution verification curves to calculate vehicle node malicious anomalies and isolate SDN control flooding vectors.",
+    "researchAreas": ["sdn-security"],
+    "description": "Establishes dynamic beta-distribution verification curves to calculate vehicle node malicious anomalies and isolate SDN control flooding vectors quickly.",
     "link": "https://ieeexplore.ieee.org/abstract/document/11432138",
     "featured": true
+  },
+  {
+    "id": "sdblock-iot-2024",
+    "year": 2024,
+    "venue": "Journal of Network and Systems Management",
+    "volume": "32 (4), 66",
+    "title": "Sdblock-iot: a blockchain-enabled software-defined multicontroller architecture to safeguard openflow tables",
+    "authors": ["B Bargayary", "N Medhi"],
+    "category": "Blockchain / SDN Security",
+    "researchAreas": ["blockchain", "sdn-security"],
+    "description": "Protects the structural reliability of hardware OpenFlow translation switches against unauthorized modifications using an interleaved consensus scheme.",
+    "link": "https://link.springer.com/article/10.1007/s10922-024-09844-6",
+    "featured": false
+  },
+  {
+    "id": "flow-table-integrity-2024",
+    "year": 2024,
+    "venue": "Cluster Computing",
+    "volume": "27 (4), 4569-4588",
+    "title": "Preserving flow table integrity in OpenFlow networks through smart contract",
+    "authors": ["B Bargayary", "N Medhi"],
+    "category": "Blockchain / SDN Security",
+    "researchAreas": ["blockchain", "sdn-security"],
+    "description": "Leverages stateful crypto contracts to dynamically police active flow directives across routing switches, mitigating false rule insertion threats.",
+    "link": "https://link.springer.com/article/10.1007/s10586-023-04196-3",
+    "featured": false
+  },
+  {
+    "id": "risp-sdn-2023",
+    "year": 2023,
+    "venue": "GLOBECOM 2023 - IEEE Global Communications Conference",
+    "volume": "510-515",
+    "title": "RISP-SDN: Reputation aware IoMT service provisioning using SDN in edge/fog-based systems",
+    "authors": ["K Ray", "N Medhi", "R Ghosh", "P Das", "VK Deka", "S Misra"],
+    "category": "IoMT / SDN Security",
+    "researchAreas": ["iomt", "sdn-security"],
+    "description": "Monitors computing node performance histories using software controllers to guarantee high-availability service pathing for sensitive vital stats tracking.",
+    "link": "https://ieeexplore.ieee.org/abstract/document/10437852",
+    "featured": false
+  },
+  {
+    "id": "m2m-iomt-2023",
+    "year": 2023,
+    "venue": "IEEE International Conference on Communications Workshops (ICC)",
+    "volume": "",
+    "title": "Performances of M2M Protocols in Internet of Medical Things",
+    "authors": ["K Das", "TL Dutta", "K Ray", "R Ghosh", "D Goswami", "A Dey", "P Phukan", "P Das", "N Medhi"],
+    "category": "IoMT & Healthcare",
+    "researchAreas": ["iomt"],
+    "description": "Provides empirical tracking and metrics analysis for M2M structures (MQTT/CoAP) handling critical healthcare streaming inside restrictive packet frameworks.",
+    "link": "https://ieeexplore.ieee.org/abstract/document/10283663",
+    "featured": false
+  },
+  {
+    "id": "blockchain-sdn-iot-2023",
+    "year": 2023,
+    "venue": "4th International Conference on Computing and Communication Systems",
+    "volume": "",
+    "title": "A blockchain-assisted authentication for SDN-IoT network using smart contract",
+    "authors": ["B Bargayary", "N Medhi"],
+    "category": "Blockchain / SDN Security",
+    "researchAreas": ["blockchain", "sdn-security"],
+    "description": "Builds an autonomous edge validation perimeter using distributed ledgers to stop illegal network controller intrusions before they occur.",
+    "link": "https://ieeexplore.ieee.org/abstract/document/10127386",
+    "featured": false
+  },
+  {
+    "id": "rf-energy-iomt-2023",
+    "year": 2023,
+    "venue": "International Conference on Information Technology",
+    "volume": "1-11",
+    "title": "A Radio Frequency-Based Energy Harvesting Model for IoMT Device",
+    "authors": ["A Roy", "N Tahseen", "N Medhi"],
+    "category": "Energy Optimization / IoMT",
+    "researchAreas": ["iomt", "energy"],
+    "description": "Engineers an architectural tracking schematic for low-power medical wearables to harvest power directly from environmental ambient microwave fields.",
+    "link": "https://link.springer.com/chapter/10.1007/978-981-99-5997-6_1",
+    "featured": false
+  },
+  {
+    "id": "health-covid-2022",
+    "year": 2022,
+    "venue": "Smart Health",
+    "volume": "26, 100322",
+    "title": "Health condition prediction and covid risk detection using healthcare 4.0 techniques",
+    "authors": ["H Neog", "PE Dutta", "N Medhi"],
+    "category": "IoMT & Healthcare",
+    "researchAreas": ["iomt"],
+    "description": "Combines neural networks (LSTM) and Markov models to evaluate incoming body diagnostics for localized disease risk screening.",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S2352648322000563",
+    "featured": false
+  },
+  {
+    "id": "throughput-smart-healthcare-2022",
+    "year": 2022,
+    "venue": "2022 IEEE 19th India Council International Conference (INDICON)",
+    "volume": "1-6",
+    "title": "Throughput prediction in smart healthcare network using machine learning approaches",
+    "authors": ["P Bardalai", "H Neog", "PE Dutta", "N Medhi", "SK Deka"],
+    "category": "IoMT & Healthcare",
+    "researchAreas": ["iomt"],
+    "description": "Applies predictive traffic models to avoid network packet collision and ensure stable throughput during telemetry strain events.",
+    "link": "https://ieeexplore.ieee.org/abstract/document/10040160",
+    "featured": false
+  },
+  {
+    "id": "resource-aware-fog-2022",
+    "year": 2022,
+    "venue": "IEEE INFOCOM Workshops",
+    "volume": "",
+    "title": "Resource aware fog based remote health monitoring system",
+    "authors": ["DH Barbhuiya", "A Dey", "R Ghosh", "K Das", "K Ray", "N Medhi"],
+    "category": "IoMT & Healthcare",
+    "researchAreas": ["iomt"],
+    "description": "Balances processing tasks between near-user node hubs and cloud architectures to maintain low latency for time-critical clinical alerts.",
+    "link": "https://ieeexplore.ieee.org/abstract/document/9798058",
+    "featured": false
+  },
+  {
+    "id": "health-monitoring-iomt-2021",
+    "year": 2021,
+    "venue": "2021 IEEE Globecom Workshops",
+    "volume": "1-6",
+    "title": "Health monitoring in Internet of Medical Things (IoMT) using machine learning (ML) approaches",
+    "authors": ["PE Dutta", "H Neog", "N Medhi"],
+    "category": "IoMT & Healthcare",
+    "researchAreas": ["iomt"],
+    "description": "Evaluates machine learning classification setups to safely distinguish critical vs normal physiological indicators on streaming patient hardware.",
+    "link": "https://ieeexplore.ieee.org/abstract/document/9682039",
+    "featured": false
   }
 ]
