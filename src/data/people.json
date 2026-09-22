@@ -5,39 +5,38 @@
     "role": "Lead",
     "category": "Faculty",
     "image": "/images/people/nabo.jpg",
-    "linkedin": "YOUR_LINKEDIN_URL",
+    "linkedin": "https://in.linkedin.com/in/nabajyoti-medhi-226421249",
     "featured": true,
+    "bio": "Dr. Nabajyoti Medhi is an Assistant Professor in the Department of Computer Science & Engineering at Tezpur University. His research spans Software-Defined Networking, network security, wireless and data-center networking, IoMT, and fog/cloud systems."
+  },
+  {
+    "id": "student-1",
+    "name": "Sakil Aziz",
+    "role": "Research Member",
+    "category": "Past Student Member",
+    "image": "/images/people/sakil.jpg",
+    "linkedin": "LINKEDIN_URL",
+    "featured": false,
     "bio": ""
   },
-
   {
-  "id": "student-1",
-  "name": "Student Name",
-  "role": "Research Member",
-  "category": "Student",
-  "image": "/images/people/student-1.jpg",
-  "linkedin": "LINKEDIN_URL",
-  "featured": false
+    "id": "student-2",
+    "name": "Student Name",
+    "role": "Research Member",
+    "category": "Student",
+    "image": "/images/people/student-1.jpg",
+    "linkedin": "LINKEDIN_URL",
+    "featured": false,
+    "bio": ""
   },
-
-   {
-  "id": "student-2",
-  "name": "Student Name",
-  "role": "Research Member",
-  "category": "Student",
-  "image": "/images/people/student-1.jpg",
-  "linkedin": "LINKEDIN_URL",
-  "featured": false
-  },
-
-   {
-  "id": "student-3",
-  "name": "Student Name",
-  "role": "Research Member",
-  "category": "Student",
-  "image": "/images/people/student-1.jpg",
-  "linkedin": "LINKEDIN_URL",
-  "featured": false
+  {
+    "id": "student-3",
+    "name": "Student Name",
+    "role": "Research Member",
+    "category": "Student",
+    "image": "/images/people/student-1.jpg",
+    "linkedin": "LINKEDIN_URL",
+    "featured": false,
+    "bio": ""
   }
-
 ]

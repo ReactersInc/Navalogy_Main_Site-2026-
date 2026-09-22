@@ -49,7 +49,7 @@ function PeoplePreview() {
 
         {/* Featured lead */}
         {featuredPeople.length > 0 && (
-          <div className="featured-person">
+          <div id="people" className="featured-person">
             {featuredPeople.map((person) => (
               <article
                 key={person.id}
@@ -98,7 +98,6 @@ function PeoplePreview() {
             ))}
           </div>
         )}
-
 
         {/* Student / research members */}
         {researchMembers.length > 0 && (

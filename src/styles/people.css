@@ -443,6 +443,10 @@
   }
 }
 
+#people {
+  scroll-margin-top: calc(var(--navbar-height) + 24px);
+}
+
 @media (max-width: 600px) {
   .people-preview-section {
     padding-block: 80px;
