@@ -1,0 +1,50 @@
+[
+  {
+    "id": "iomt",
+    "number": "01",
+    "title": "IoMT & Smart Healthcare",
+    "shortTitle": "IoMT",
+    "description": "Building intelligent healthcare infrastructure for predictive remote care, distributed fog scheduling, and low-latency medical telemetry.",
+    "tags": [
+      "Edge Computing",
+      "Predictive Diagnostics",
+      "Fog Orchestration"
+    ]
+  },
+  {
+    "id": "sdn-security",
+    "number": "02",
+    "title": "Software-Defined Network Security",
+    "shortTitle": "SDN Security",
+    "description": "Engineering programmable network fabrics capable of detecting and mitigating data-plane threats while preserving controller integrity.",
+    "tags": [
+      "SDN",
+      "OpenFlow Protection",
+      "DDoS Mitigation"
+    ]
+  },
+  {
+    "id": "blockchain",
+    "number": "03",
+    "title": "Blockchain & Distributed Trust",
+    "shortTitle": "Distributed Trust",
+    "description": "Exploring smart-contract infrastructure for zero-trust authorization, multi-stage validation, and cross-domain flow verification.",
+    "tags": [
+      "Smart Contracts",
+      "Chaincode Security",
+      "Trustless Handshakes"
+    ]
+  },
+  {
+    "id": "energy",
+    "number": "04",
+    "title": "RF Energy & Edge Intelligence",
+    "shortTitle": "Energy & Edge",
+    "description": "Optimizing constrained edge devices through ambient energy harvesting, reinforcement learning, and intelligent resource scheduling.",
+    "tags": [
+      "RF Harvesting",
+      "Deep Q-Learning",
+      "Resource Optimization"
+    ]
+  }
+]

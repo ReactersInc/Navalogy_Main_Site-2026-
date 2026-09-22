@@ -1,0 +1,23 @@
+[
+  {
+    "id": "person-id",
+    "slug": "person-name",
+    "name": "Person Name",
+    "role": "Research Role",
+    "category": "Faculty",
+    "image": "/images/people/person-name.jpg",
+    "bio": "",
+    "researchAreas": [
+      "iomt"
+    ],
+    "interests": [
+      "Research Area",
+      "Research Area"
+    ],
+    "links": {
+      "googleScholar": "",
+      "orcid": "",
+      "linkedin": ""
+    }
+  }
+]

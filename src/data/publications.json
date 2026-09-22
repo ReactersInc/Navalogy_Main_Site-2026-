@@ -1,0 +1,86 @@
+[
+  {
+    "id": "hybrid-rf-iomt-2026",
+    "year": 2026,
+    "venue": "SN Computer Science",
+    "volume": "7 (6), 631",
+    "title": "A Hybrid Framework for Energy-Efficient Sensor Management in RF-Powered IoMT Systems",
+    "authors": [
+      "A Roy",
+      "H Deka",
+      "N Medhi"
+    ],
+    "category": "Energy Optimization / IoMT",
+    "researchAreas": [
+      "iomt",
+      "energy"
+    ],
+    "description": "Combines data forecasting with reinforcement learning to dynamically schedule resource states and harvest ambient Radio Frequency signals.",
+    "link": "https://www.researchgate.net/publication/408917308_A_Hybrid_Framework_for_Energy-Efficient_Sensor_Management_in_RF-Powered_IoMT_Systems",
+    "featured": true
+  },
+  {
+    "id": "edfs-2026",
+    "year": 2026,
+    "venue": "Cluster Computing",
+    "volume": "29 (5), 328",
+    "title": "EDFS: Election-based decentralized fog scheduling for IoMT",
+    "authors": [
+      "R Ghosh",
+      "P Das",
+      "K Ray",
+      "VK Deka",
+      "TL Dutta",
+      "N Medhi"
+    ],
+    "category": "IoMT & Healthcare",
+    "researchAreas": [
+      "iomt"
+    ],
+    "description": "Implements a voting-based distribution configuration to balance incoming real-time sensor streams across resource-constrained edge-fog installations.",
+    "link": "https://www.researchgate.net/publication/406988387_EDFS_Election-based_decentralized_fog_scheduling_for_IoMT",
+    "featured": true
+  },
+  {
+    "id": "cross-distblock-2026",
+    "year": 2026,
+    "venue": "Journal of Network and Systems Management",
+    "volume": "34 (1), 1-32",
+    "title": "Cross-DistBlock: Blockchain-Enabled Multi-stage Flow Verification in Multi-domain Software-Defined Networks",
+    "authors": [
+      "B Bargayary",
+      "N Medhi"
+    ],
+    "category": "Blockchain / SDN Security",
+    "researchAreas": [
+      "blockchain",
+      "sdn-security"
+    ],
+    "description": "Engineers an immutable multi-stage security validation process for distributed software-defined network environments.",
+    "link": "https://www.researchgate.net/publication/396620855_Cross-DistBlock_Blockchain-Enabled_Multi-stage_Flow_Verification_in_Multi-domain_Software-Defined_Networks",
+    "featured": false
+  },
+  {
+    "id": "bred-2025",
+    "year": 2025,
+    "venue": "GLOBECOM 2025",
+    "volume": "679-684",
+    "title": "BReD: β-Distribution-Based Reputation for DDoS Attack Detection and Mitigation using SDN in VSNs",
+    "authors": [
+      "P Das",
+      "N Medhi",
+      "S Aziz",
+      "H Mahla",
+      "R Ghosh",
+      "K Ray",
+      "S Misra"
+    ],
+    "category": "SDN Security",
+    "researchAreas": [
+      "sdn-security"
+    ],
+    "description": "Establishes dynamic beta-distribution verification curves to calculate vehicle node malicious anomalies and isolate SDN control flooding vectors.",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11432138",
+    "featured": true
+  }
+]
