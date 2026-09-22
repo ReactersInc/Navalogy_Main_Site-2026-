@@ -1,23 +1,43 @@
 [
   {
-    "id": "person-id",
-    "slug": "person-name",
-    "name": "Person Name",
-    "role": "Research Role",
+    "id": "nabajyoti-medhi",
+    "name": "Dr. Nabajyoti Medhi",
+    "role": "Lead",
     "category": "Faculty",
-    "image": "/images/people/person-name.jpg",
-    "bio": "",
-    "researchAreas": [
-      "iomt"
-    ],
-    "interests": [
-      "Research Area",
-      "Research Area"
-    ],
-    "links": {
-      "googleScholar": "",
-      "orcid": "",
-      "linkedin": ""
-    }
+    "image": "/images/people/nabo.jpg",
+    "linkedin": "YOUR_LINKEDIN_URL",
+    "featured": true,
+    "bio": ""
+  },
+
+  {
+  "id": "student-1",
+  "name": "Student Name",
+  "role": "Research Member",
+  "category": "Student",
+  "image": "/images/people/student-1.jpg",
+  "linkedin": "LINKEDIN_URL",
+  "featured": false
+  },
+
+   {
+  "id": "student-2",
+  "name": "Student Name",
+  "role": "Research Member",
+  "category": "Student",
+  "image": "/images/people/student-1.jpg",
+  "linkedin": "LINKEDIN_URL",
+  "featured": false
+  },
+
+   {
+  "id": "student-3",
+  "name": "Student Name",
+  "role": "Research Member",
+  "category": "Student",
+  "image": "/images/people/student-1.jpg",
+  "linkedin": "LINKEDIN_URL",
+  "featured": false
   }
+
 ]

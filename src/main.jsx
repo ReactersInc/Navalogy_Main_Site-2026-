@@ -12,7 +12,8 @@ import "./styles/components.css";
 import "./styles/navbar.css";
 import "./styles/hero.css";
 import "./styles/research.css";
-// import "./styles/people.css";
+import "./styles/featured-research.css";
+import "./styles/people.css";
 // import "./styles/publications.css";
 // import "./styles/about.css";
 

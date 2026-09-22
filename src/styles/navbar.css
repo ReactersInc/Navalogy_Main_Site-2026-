@@ -50,7 +50,7 @@
 .navbar-brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 
   flex-shrink: 0;
 
@@ -58,25 +58,81 @@
 }
 
 .navbar-brand-mark {
+  position: relative;
+
   display: grid;
   place-items: center;
 
-  width: 28px;
-  height: 28px;
+  width: 38px;
+  height: 38px;
 
-  border: 1px solid var(--color-accent);
+  border: 1px solid rgba(200, 255, 61, 0.55);
 
   color: var(--color-accent);
 
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
 
   line-height: 1;
+
+  background: rgba(200, 255, 61, 0.035);
+
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.025),
+    0 0 20px rgba(200, 255, 61, 0.04);
+
+  transition:
+    border-color var(--transition-normal),
+    background var(--transition-normal),
+    box-shadow var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.navbar-brand-mark::before {
+  content: "";
+
+  position: absolute;
+
+  top: -1px;
+  right: -1px;
+
+  width: 8px;
+  height: 8px;
+
+  border-top: 1px solid var(--color-accent);
+  border-right: 1px solid var(--color-accent);
+}
+
+.navbar-brand-mark::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: -1px;
+  left: -1px;
+
+  width: 8px;
+  height: 8px;
+
+  border-bottom: 1px solid var(--color-accent);
+  border-left: 1px solid var(--color-accent);
+}
+
+.navbar-brand:hover .navbar-brand-mark {
+  border-color: var(--color-accent);
+
+  background: rgba(200, 255, 61, 0.07);
+
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.035),
+    0 0 24px rgba(200, 255, 61, 0.09);
+
+  transform: translateY(-1px);
 }
 
 .navbar-brand-text {
-  font-size: 15px;
+  font-size: 1.75rem;
   line-height: 1;
   font-weight: 700;
   letter-spacing: -0.025em;
@@ -109,7 +165,7 @@
   color: var(--color-text-secondary);
 
   font-family: var(--font-primary);
-  font-size: 13px;
+  font-size: 0.95rem;
   font-weight: 600;
   line-height: 1;
 
@@ -170,7 +226,7 @@
   color: var(--color-text);
 
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 0.80rem;
   font-weight: 500;
   line-height: 1;
 
@@ -380,13 +436,14 @@
   }
 
   .navbar-brand-text {
-    font-size: 14px;
+    font-size: 1.35rem;
   }
 
   .navbar-brand-mark {
-    width: 26px;
-    height: 26px;
+    width: 32px;
+    height: 32px;
   }
+
 
   .mobile-navigation-link {
     font-size: 21px;

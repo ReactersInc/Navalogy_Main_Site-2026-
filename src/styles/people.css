@@ -1,0 +1,508 @@
+/* =========================================================
+   People Preview
+   ========================================================= */
+
+.people-preview-section {
+  position: relative;
+
+  padding-block: var(--space-32);
+
+  border-top: 1px solid var(--color-border);
+
+  background: var(--color-bg);
+}
+
+.people-preview-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+
+  gap: 60px;
+
+  margin-bottom: 58px;
+}
+
+.people-preview-heading {
+  max-width: 760px;
+}
+
+.people-preview-title {
+  margin-top: 20px;
+
+  color: var(--color-text);
+
+  font-size: clamp(42px, 5vw, 68px);
+  line-height: 0.98;
+
+  font-weight: 700;
+
+  letter-spacing: -0.055em;
+}
+
+.people-preview-intro {
+  align-self: end;
+
+  max-width: 390px;
+}
+
+.people-preview-intro p {
+  color: var(--color-text-secondary);
+
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.people-preview-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 24px;
+  padding-bottom: 5px;
+
+  border-bottom: 1px solid var(--color-border);
+
+  color: var(--color-text-secondary);
+
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  line-height: 1;
+
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.people-preview-link:hover {
+  border-color: var(--color-accent);
+
+  color: var(--color-accent);
+
+  transform: translate(2px, -1px);
+}
+
+
+/* =========================================================
+   Featured Lead
+   ========================================================= */
+
+.featured-person {
+  margin-bottom: 72px;
+}
+
+.featured-person-card {
+  display: grid;
+  grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
+
+  min-height: 460px;
+
+  border: 1px solid var(--color-border);
+
+  background: var(--color-bg-card);
+}
+
+.featured-person-image {
+  min-height: 460px;
+
+  overflow: hidden;
+
+  background: var(--color-bg-elevated);
+}
+
+.featured-person-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  filter: grayscale(100%);
+  opacity: 0.9;
+
+  transition:
+    filter var(--transition-slow),
+    opacity var(--transition-slow),
+    transform var(--transition-slow);
+}
+
+.featured-person-card:hover .featured-person-image img {
+  filter: grayscale(0%);
+  opacity: 1;
+
+  transform: scale(1.02);
+}
+
+.featured-person-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 56px;
+}
+
+.featured-person-label {
+  margin-bottom: 18px;
+
+  color: var(--color-accent);
+
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  line-height: 1.4;
+
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.featured-person-name {
+  color: var(--color-text);
+
+  font-size: clamp(32px, 4vw, 54px);
+  line-height: 1;
+
+  font-weight: 700;
+
+  letter-spacing: -0.05em;
+}
+
+.featured-person-role {
+  margin-top: 12px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.featured-person-bio {
+  max-width: 620px;
+
+  margin-top: 28px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 0.9375rem;
+  line-height: 1.75;
+}
+
+.featured-person-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  align-self: flex-start;
+
+  margin-top: 30px;
+  padding-bottom: 6px;
+
+  border-bottom: 1px solid var(--color-border);
+
+  color: var(--color-text-secondary);
+
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  line-height: 1;
+
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.featured-person-link:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+
+/* =========================================================
+   Research Members
+   ========================================================= */
+
+.research-members {
+  margin-top: 72px;
+}
+
+.research-members-header {
+  margin-bottom: 28px;
+}
+
+/* =========================================================
+   People grid
+   ========================================================= */
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 1px;
+
+  border: 1px solid var(--color-border);
+
+  background: var(--color-border);
+}
+
+
+/* =========================================================
+   Person card
+   ========================================================= */
+
+.person-card {
+  min-width: 0;
+
+  background: var(--color-bg-card);
+
+  transition:
+    background var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.person-card:hover {
+  background: var(--color-bg-card-hover);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   Person image
+   ========================================================= */
+
+.person-card-image {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 4 / 5;
+
+  overflow: hidden;
+
+  background: var(--color-bg-elevated);
+}
+
+.person-card-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  filter: grayscale(100%);
+  opacity: 0.9;
+
+  transition:
+    filter var(--transition-slow),
+    opacity var(--transition-slow),
+    transform var(--transition-slow);
+}
+
+.person-card:hover .person-card-image img {
+  filter: grayscale(0%);
+  opacity: 1;
+
+  transform: scale(1.025);
+}
+
+
+/* =========================================================
+   Image placeholder
+   ========================================================= */
+
+.person-card-placeholder {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  place-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.035),
+      transparent
+    );
+
+  color: var(--color-text-faint);
+
+  font-family: var(--font-mono);
+  font-size: 3rem;
+}
+
+.person-card-placeholder span {
+  display: grid;
+  place-items: center;
+
+  width: 76px;
+  height: 76px;
+
+  border: 1px solid var(--color-border);
+
+  color: var(--color-text-muted);
+}
+
+
+/* =========================================================
+   Person information
+   ========================================================= */
+
+.person-card-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 20px 22px 22px;
+}
+
+.person-card-name {
+  color: var(--color-text);
+
+  font-size: 1.25rem;
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  letter-spacing: -0.025em;
+}
+
+.person-card-role {
+  margin-top: 6px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   LinkedIn
+   ========================================================= */
+
+.person-card-linkedin {
+  flex-shrink: 0;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  min-height: 30px;
+  padding: 0 9px;
+
+  border: 1px solid var(--color-border);
+
+  color: var(--color-text-muted);
+
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  line-height: 1;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    background var(--transition-fast);
+}
+
+.person-card-linkedin:hover {
+  border-color: var(--color-accent);
+
+  color: var(--color-accent);
+
+  background: rgba(200, 255, 61, 0.04);
+}
+
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .people-preview-section {
+    padding-block: var(--space-24);
+  }
+
+  .people-preview-header {
+    grid-template-columns: 1fr;
+
+    gap: 24px;
+
+    margin-bottom: 46px;
+  }
+
+  .people-preview-intro {
+    max-width: 560px;
+  }
+
+  .people-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .people-preview-section {
+    padding-block: 80px;
+  }
+
+  .people-preview-title {
+    font-size: clamp(38px, 11vw, 52px);
+  }
+
+  .people-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .person-card-image {
+    aspect-ratio: 5 / 4;
+  }
+
+  .person-card-content {
+    align-items: flex-start;
+    flex-direction: column;
+
+    padding: 20px;
+  }
+
+  .person-card-linkedin {
+    margin-top: 4px;
+  }
+
+    .featured-person-card {
+    grid-template-columns: 280px minmax(0, 1fr);
+  }
+
+  .featured-person-image {
+    min-height: 400px;
+  }
+
+  .featured-person-content {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-person-card {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-person-image {
+    min-height: 420px;
+    aspect-ratio: 4 / 5;
+  }
+
+  .featured-person-content {
+    padding: 28px 24px 32px;
+  }
+
+  .featured-person-name {
+    font-size: 36px;
+  }
+
+  .research-members {
+    margin-top: 56px;
+  }
+}
