@@ -3,24 +3,28 @@
   "domain": "navalogy.com",
   "tagline": "Engineering secure intelligent ecosystems.",
   "description": "Navalogy explores the intersection of distributed systems, intelligent edge orchestration, network security, and bio-inspired data systems.",
-  "navigation": [
-    {
-      "label": "Research",
-      "path": "/research"
-    },
-    {
-      "label": "People",
-      "path": "/people"
-    },
-    {
-      "label": "Publications",
-      "path": "/publications"
-    },
-    {
-      "label": "About",
-      "path": "/about"
-    }
-  ],
+"navigation": [
+  {
+    "label": "Research",
+    "path": "/research"
+  },
+  {
+    "label": "Projects",
+    "path": "/projects"
+  },
+  {
+    "label": "People",
+    "path": "/people"
+  },
+  {
+    "label": "Publications",
+    "path": "/publications"
+  },
+  {
+    "label": "About",
+    "path": "/about"
+  }
+],
   "footer": {
     "description": "Open-access infrastructure R&D",
     "copyright": "Navalogy Lab Ecosystem"

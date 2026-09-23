@@ -4,39 +4,384 @@
     "name": "Dr. Nabajyoti Medhi",
     "role": "Lead",
     "category": "Faculty",
-    "image": "/images/people/nabo.jpg",
-    "linkedin": "https://in.linkedin.com/in/nabajyoti-medhi-226421249",
+    "membership": "lead",
+    "enabled": true,
+    "image": "/images/people/medhi-sir.png",
+    "linkedin": "https://www.linkedin.com/in/nabajyoti-medhi-226421249",
     "featured": true,
-    "bio": "Dr. Nabajyoti Medhi is an Assistant Professor in the Department of Computer Science & Engineering at Tezpur University. His research spans Software-Defined Networking, network security, wireless and data-center networking, IoMT, and fog/cloud systems."
+    "bio": "Dr. Nabajyoti Medhi is an Assistant Professor at Tezpur University. His research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing."
   },
+
   {
-    "id": "student-1",
+    "id": "birlang-bargayary",
+    "name": "Birlang Bargayary",
+    "role": "PhD Scholar | Tezpur University",
+    "category": "PhD Scholar",
+    "membership": "past",
+    "enabled": true,
+    "passingYear": 2025,
+    "image": "/images/people/birlang.png",
+    "linkedin": "https://www.linkedin.com/in/birglang-bargayary-b0a7a9118/",
+    "featured": false,
+    "bio": "Birlang Bargayary is a PhD Scholar at Tezpur University. His research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing."
+  },
+
+  {
+    "id": "priyanka-bardoloi",
+    "name": "Priyanka Bardoloi",
+    "role": "PhD Scholar | Tezpur University | Principal Engineer, Starhub",
+    "category": "PhD Scholar",
+    "membership": "current",
+    "enabled": true,
+    "image": "/images/people/priyanka.png",
+    "linkedin": "https://www.linkedin.com/in/priyankabardalai/",
+    "featured": false,
+    "bio": "Priyanka Bardoloi is a Principal Engineer at Starhub, Singapore. She is currently pursuing her PhD in the Department of Computer Science and Engineering, Tezpur University. Her research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing."
+  },
+
+    {
+    "id": "rhitu-raj-deori",
+    "name": "Rhitu Raj Deori",
+    "role": "PhD Scholar | Tezpur University",
+    "category": "PhD Scholar",
+    "membership": "current",
+    "enabled": true,
+    "image": "/images/people/RhituRaj.png",
+    "linkedin": "https://www.linkedin.com/in/rhitu-raj-deori-6a9568256/",
+    "featured": false,
+    "bio": "Working on security aspect of 5G network"
+  },
+
+  {
+    "id": "antara-singhal",
+    "name": "Antara Singhal",
+    "role": "B.Tech 4th Year CSE | Tezpur University",
+    "category": "Student Researcher",
+    "membership": "current",
+    "enabled": false,
+    "image": "/images/people/antara.png",
+    "linkedin": "https://www.linkedin.com/in/antara-singhal",
+    "featured": false,
+    "bio": "Antara Singhal, a fourth-year B.Tech student specializing in Computer Science and Engineering at Tezpur University, combines a strong academic foundation with a fervor for technology."
+  },
+
+  {
+    "id": "arindom-aich",
+    "name": "Arindom Aich",
+    "role": "Project Research Assistant | IIT KGP",
+    "category": "Student Researcher",
+    "membership": "past",
+    "enabled": true,
+    "passingYear": 2024,
+    "image": "/images/people/arindom.png",
+    "linkedin": "https://www.linkedin.com/in/arindomaich",
+    "featured": false,
+    "bio": "Arindom Aich, a dedicated fourth-year B.Tech CSE student at Tezpur University, combines academic prowess with a passion for technology."
+  },
+
+  {
+    "id": "bhargab-pratim-nath",
+    "name": "Bhargab Pratim Nath",
+    "role": "B.Tech 3rd Year ECE | Tezpur University",
+    "category": "Student Researcher",
+    "membership": "past",
+    "passingYear":2025,
+    "enabled": false,
+    "image": "/images/people/bhargab.png",
+    "linkedin": "https://www.linkedin.com/in/bhargab-pratim-nath-a777b3216S",
+    "featured": false,
+    "bio": "Bhargab Pratim Nath, a third-year ECE student at Tezpur University, is passionate about electronics and communication engineering."
+  },
+
+  {
+    "id": "chandrima-paul",
+    "name": "Chandrima Paul",
+    "role": "B.Tech 3rd Year CSE | Tezpur University",
+    "category": "Student Researcher",
+    "membership": "past",
+    "passingYear":2025,
+    "enabled": true,
+    "image": "/images/people/chandrima.png",
+    "linkedin": "https://www.linkedin.com/in/chandrima-p-71b452228/",
+    "featured": false,
+    "bio": "Chandrima Paul is a B.Tech student in the Department of Computer Science and Engineering with interests in Cloud Computing, NLP, and Cyber Security."
+  },
+
+  {
+    "id": "dhritideepa-sarania",
+    "name": "Dhritideepa Sarania",
+    "role": "B.Tech 3rd Year CSE | Tezpur University",
+    "category": "Student Researcher",
+    "membership": "past",
+    "passingYear":2025,
+    "enabled": true,
+    "image": "/images/people/dhritideepa.png",
+    "linkedin": "https://www.linkedin.com/in/dhritideepa-sarania-761b40250",
+    "featured": false,
+    "bio": "Passionate Frontend Developer and Creative UX/UI Designer specializing in responsive applications and intuitive user-centric interfaces."
+  },
+
+  {
+    "id": "himanshu-sharma",
+    "name": "Himanshu Sharma",
+    "role": "B.Tech 3rd Year CSE | Tezpur University",
+    "category": "Student Researcher",
+    "membership": "past",
+    "passingYear":2025,
+    "enabled": true,
+    "image": "/images/people/himanshu.png",
+    "linkedin": "https://www.linkedin.com/in/himanshu-sharma-82723b229/",
+    "featured": false,
+    "bio": "Passionate about creating engaging experiences across web, mobile platforms, and game development."
+  },
+
+  {
+    "id": "kumarjit-ray",
+    "name": "Kumarjit Ray",
+    "role": "PhD Scholar | IIT Kharagpur | Former Asst. Prof. Siksha O Anusandhan",
+    "category": "PhD Scholar",
+    "membership": "current",
+    "enabled": true,
+    "image": "/images/people/kumarjit.png",
+    "linkedin": "https://in.linkedin.com/in/kumarjit1997",
+    "featured": false,
+    "bio": "Kumarjit Ray is a PhD Scholar at IIT Kharagpur with a background as a former Assistant Professor at Siksha O Anusandhan."
+  },
+
+  {
+    "id": "praptipriya-phukon",
+    "name": "PraptiPriya Phukon",
+    "role": "B.Tech 3rd Year CSE | Tezpur University",
+    "category": "Student Researcher",
+    "membership": "past",
+    "passingYear":2025,
+    "enabled": true,
+    "image": "/images/people/praptipriya.png",
+    "linkedin": "https://www.linkedin.com/in/praptipriya-phukon-07a83b223",
+    "featured": false,
+    "bio": "Versatile CSE undergraduate skilled in React, computer networks, databases, and full-stack development."
+  },
+
+  {
+    "id": "pratik-chanda",
+    "name": "Pratik Chanda",
+    "role": "B.Tech 4th Year EE | Tezpur University",
+    "category": "Student Researcher",
+    "membership": "past",
+    "enabled": false,
+    "image": "/images/people/pratik.png",
+    "linkedin": "https://in.linkedin.com/in/pratik-chanda-a498aa214",
+    "featured": false,
+    "bio": "Pratik Chanda is a fourth-year B.Tech student in Electrical Engineering at Tezpur University with an interest in electrical systems and innovative solutions."
+  },
+
+  {
+    "id": "pritindra-das",
+    "name": "Pritindra Das",
+    "role": "B.Tech 4th Year CSE | Tezpur University",
+    "category": "Student Researcher",
+    "membership": "past",
+    "passingYear":2023,
+    "enabled": true,
+    "image": "/images/people/pritindra.png",
+    "linkedin": "https://in.linkedin.com/in/pritindra-das",
+    "featured": false,
+    "bio": "Pritindra Das holds a B.Tech degree in Computer Science and Engineering from Tezpur University."
+  },
+
+  {
+    "id": "rajdeep-ghosh",
+    "name": "Rajdeep Ghosh",
+    "role": "PhD Scholar | IIT Kharagpur",
+    "category": "Research Member",
+    "membership": "current",
+    "passingYear":2022,
+    "enabled": true,
+    "image": "/images/people/rajdeep.png",
+    "linkedin": "https://in.linkedin.com/in/rajdeep-ghosh-301082175",
+    "featured": false,
+    "bio": "Rajdeep Ghosh holds an M.Tech in Computer Science from Calcutta University and was recognized as the Best Graduate of Tezpur University from the class of 2022."
+  },
+
+  {
+    "id": "rajveer-chaudhary",
+    "name": "Rajveer Chaudhary",
+    "role": "B.Tech CSE 3rd Year | Tezpur University",
+    "category": "Student Researcher",
+    "membership": "past",
+    "passingYear":2025,
+    "enabled": true,
+    "image": "/images/people/rajveer.png",
+    "linkedin": "https://www.linkedin.com/in/RajveerChoudhary/",
+    "featured": false,
+    "bio": "Rajveer Chaudhary is a full-stack developer specializing in Angular, with experience across frontend and backend technologies."
+  },
+
+  {
+    "id": "vivek-rai",
+    "name": "Vivek Rai",
+    "role": "B.Tech 3rd Year CSE | Tezpur University",
+    "category": "Student Researcher",
+    "membership": "past",
+    "passingYear":2025,
+    "enabled": true,
+    "image": "/images/people/vivek.png",
+    "linkedin": "",
+    "featured": false,
+    "bio": "Angular full-stack developer creating dynamic and responsive web applications."
+  },
+
+  {
+    "id": "tanushree-das",
+    "name": "Tanushree Das",
+    "role": "B.Tech 4th Year CSE | Tezpur University",
+    "category": "Student Researcher",
+    "membership": "past",
+    "enabled": false,
+    "passingYear":2024,
+    "image": "/images/people/tanushree.png",
+    "linkedin": "https://www.linkedin.com/in/tanushree-das-80a927209",
+    "featured": false,
+    "bio": "Tanushree Das is a fourth-year B.Tech CSE student at Tezpur University with interests in technology and innovation."
+  },
+
+  {
+    "id": "tridib-lochan-dutta",
+    "name": "Tridib Lochan Dutta",
+    "role": "B.Tech 3rd Year ECE | Tezpur University",
+    "category": "Student Researcher",
+    "membership": "past",
+    "passingYear":2024,
+    "enabled": true,
+    "image": "/images/people/tridib.png",
+    "linkedin": "https://www.linkedin.com/in/tridib-lochan-dutta/",
+    "featured": false,
+    "bio": "Tridib Lochan Dutta is a B.Tech student at Tezpur University."
+  },
+
+  {
+    "id": "vicky-deka",
+    "name": "Vicky Deka",
+    "role": "B.Tech 4th Year CSE | Tezpur University",
+    "category": "Student Researcher",
+    "membership": "past",
+    "passingYear":2022,
+    "enabled": true,
+    "image": "/images/people/vicky.png",
+    "linkedin": "https://in.linkedin.com/in/vickydeka",
+    "featured": false,
+    "bio": "Vicky Deka is a B.Tech student at Tezpur University."
+  },
+
+  {
+    "id": "adittya-dey",
+    "name": "Adittya Dey",
+    "role": "SDE II | Velocity",
+    "category": "Founding Member",
+    "membership": "past",
+    "enabled": true,
+    "passingYear": 2022,
+    "image": "/images/people/adittya.png",
+    "linkedin": "https://in.linkedin.com/in/adittyadey",
+    "featured": false,
+    "bio": "Adittya Dey is a Software Development Engineer II at Velocity, India and a former Research Associate at Tezpur University."
+  },
+
+  {
+    "id": "dilwar-hussain-barbhuiya",
+    "name": "Dilwar Hussain Barbhuiya",
+    "role": "PhD Scholar | Tezpur University",
+    "category": "Founding Member",
+    "membership": "past",
+    "enabled": true,
+    "passingYear": 2021,
+    "image": "/images/people/dilwar.png",
+    "linkedin": "https://www.linkedin.com/in/dilwar-barbhuiya",
+    "featured": false,
+    "bio": "Dilwar Hussain Barbhuiya is a PhD Scholar associated with Tezpur University."
+  },
+
+  {
+    "id": "kunal-das",
+    "name": "Kunal Das",
+    "role": "Intern | ex-IQVIA",
+    "category": "Founding Member",
+    "membership": "past",
+    "enabled": true,
+    "passingYear": 2022,
+    "image": "/images/people/kunal.png",
+    "linkedin": "https://in.linkedin.com/in/kunal-das-131158185",
+    "featured": false,
+    "bio": "Kunal Das is a former intern at IQVIA and was recognized for the Best B.Tech Project of the year 2022 from the ECE Department of Tezpur University."
+  },
+
+  {
+    "id": "sakil-aziz",
     "name": "Sakil Aziz",
-    "role": "Research Member",
+    "role": "Asst. Project Engineer | IIT Guwahati",
     "category": "Past Student Member",
+    "membership": "current",
+    "enabled": true,
+    "passingYear": 2026,
     "image": "/images/people/sakil.jpg",
-    "linkedin": "LINKEDIN_URL",
+    "linkedin": "https://www.linkedin.com/in/sakil-aziz-2b0379256/",
     "featured": false,
     "bio": ""
   },
+
   {
-    "id": "student-2",
-    "name": "Student Name",
-    "role": "Research Member",
-    "category": "Student",
-    "image": "/images/people/student-1.jpg",
-    "linkedin": "LINKEDIN_URL",
+    "id": "debangee-goswami",
+    "name": "Debangee Goswami",
+    "role": "B.Tech EE 4th Year | Tezpur University",
+    "category": "Past Student Member",
+    "membership": "past",
+    "enabled": true,
+    "passingYear": 2022,
+    "image": "/images/people/debangee.png",
+    "linkedin": "https://www.linkedin.com/in/debangee-goswami-601577222",
     "featured": false,
-    "bio": ""
+    "bio": "Debangee Goswami is a B.Tech student at Tezpur University with research interests including Software Defined Networking, Network Function Virtualization, and Cloud Computing."
   },
+
   {
-    "id": "student-3",
-    "name": "Student Name",
-    "role": "Research Member",
-    "category": "Student",
-    "image": "/images/people/student-1.jpg",
-    "linkedin": "LINKEDIN_URL",
+    "id": "deekshith-kumar",
+    "name": "Deekshith Kumar",
+    "role": "B.Tech 4th Year CSE | Tezpur University",
+    "category": "Past Student Member",
+    "membership": "past",
+    "enabled": true,
+    "passingYear": null,
+    "image": "/images/people/deekshith.png",
+    "linkedin": "https://www.linkedin.com/in/yerramdeekshithkumar/",
     "featured": false,
-    "bio": ""
+    "bio": "Deekshith Kumar is a fourth-year B.Tech student in Computer Science and Engineering at Tezpur University."
+  },
+
+  {
+    "id": "dibyaroop-das",
+    "name": "Dibyaroop Das",
+    "role": "B.Tech 4th Year CSE | Tezpur University",
+    "category": "Past Student Member",
+    "membership": "past",
+    "enabled": true,
+    "passingYear": 2023,
+    "image": "/images/people/dibya.png",
+    "linkedin": "https://in.linkedin.com/in/dibyaroop-das-8803a41a4",
+    "featured": false,
+    "bio": "Dibyaroop Das is a B.Tech student at Tezpur University."
+  },
+
+  {
+    "id": "prabhatangshu-phukan",
+    "name": "Prabhatangshu Phukan",
+    "role": "B.Tech EE 4th Year | Tezpur University",
+    "category": "Past Student Member",
+    "membership": "past",
+    "enabled": true,
+    "passingYear": null,
+    "image": "/images/people/prabhat.png",
+    "linkedin": "https://www.linkedin.com/in/prabhatangshu-phukan",
+    "featured": false,
+    "bio": "Prabhatangshu Phukan is a B.Tech student at Tezpur University."
   }
 ]

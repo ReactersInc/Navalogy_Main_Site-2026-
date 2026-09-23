@@ -52,16 +52,34 @@ function Navbar() {
   };
 
   /* =========================================================
+     Scroll to homepage section
+     ========================================================= */
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+
+    if (!section) {
+      console.warn(
+        `Navalogy: section #${sectionId} was not found.`
+      );
+      return false;
+    }
+
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+
+    return true;
+  };
+
+  /* =========================================================
      Brand / Home navigation
      ========================================================= */
 
   const handleBrandClick = (event) => {
     closeMobileMenu();
 
-    /*
-     * If already on homepage, prevent React Router from
-     * doing anything and simply scroll to the top.
-     */
     if (location.pathname === "/") {
       event.preventDefault();
 
@@ -71,73 +89,91 @@ function Navbar() {
         top: 0,
         behavior: "smooth",
       });
-
-      return;
     }
-
-    /*
-     * If on another page, allow NavLink to navigate
-     * normally to the homepage.
-     */
   };
 
   /* =========================================================
-     People navigation
+     People / Projects navigation
      ========================================================= */
 
-  const handlePeopleClick = (event) => {
+  const handleSectionClick = (event, sectionId) => {
     event.preventDefault();
 
     closeMobileMenu();
 
     /*
-     * If already on homepage, scroll directly to the
-     * featured lead section.
+     * Already on homepage:
+     * scroll directly to the section.
      */
     if (location.pathname === "/") {
-      const peopleSection =
-        document.getElementById("people");
+      scrollToSection(sectionId);
 
-      if (peopleSection) {
-        peopleSection.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
+      /*
+       * Keep URL clean. We don't actually need the hash
+       * for scrolling when already on the homepage.
+       */
+      window.history.replaceState(
+        null,
+        "",
+        `/#${sectionId}`
+      );
 
       return;
     }
 
     /*
-     * If on another page, navigate to homepage with
-     * the people hash.
+     * On another page:
+     * first navigate to homepage.
      */
-    navigate("/#people");
+    navigate(`/#${sectionId}`);
   };
 
   /* =========================================================
-     Handle People hash after navigating to homepage
+     Handle section navigation after returning home
      ========================================================= */
 
   useEffect(() => {
-    if (
-      location.pathname === "/" &&
-      location.hash === "#people"
-    ) {
-      const timeout = setTimeout(() => {
-        const peopleSection =
-          document.getElementById("people");
-
-        if (peopleSection) {
-          peopleSection.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-        }
-      }, 100);
-
-      return () => clearTimeout(timeout);
+    if (location.pathname !== "/") {
+      return;
     }
+
+    if (!location.hash) {
+      return;
+    }
+
+    const sectionId = location.hash.substring(1);
+
+    /*
+     * Give React enough time to render Home.jsx
+     * before looking for the section.
+     */
+    let attempts = 0;
+
+    const findAndScroll = () => {
+      const section =
+        document.getElementById(sectionId);
+
+      if (section) {
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+
+        return;
+      }
+
+      /*
+       * Retry a few times in case the Home component
+       * has not finished rendering yet.
+       */
+      attempts += 1;
+
+      if (attempts < 20) {
+        setTimeout(findAndScroll, 50);
+      }
+    };
+
+    findAndScroll();
   }, [location.pathname, location.hash]);
 
   /* =========================================================
@@ -146,10 +182,6 @@ function Navbar() {
 
   return (
     <>
-      {/* =====================================================
-          Navbar
-          ===================================================== */}
-
       <header
         className={`navbar ${
           scrolled ? "navbar-scrolled" : ""
@@ -157,9 +189,7 @@ function Navbar() {
       >
         <div className="navbar-inner">
 
-          {/* =================================================
-              Brand
-              ================================================= */}
+          {/* Brand */}
 
           <NavLink
             to="/"
@@ -177,26 +207,36 @@ function Navbar() {
           </NavLink>
 
 
-          {/* =================================================
-              Desktop Navigation
-              ================================================= */}
+          {/* Desktop Navigation */}
 
           <nav className="navbar-nav">
 
             {site.navigation.map((item) => {
 
               /*
-               * People is temporarily handled as a
-               * homepage anchor until the dedicated
-               * People page is ready.
+               * People and Projects are homepage
+               * section navigation.
                */
-              if (item.label === "People") {
+              if (
+                item.label === "People" ||
+                item.label === "Projects"
+              ) {
+                const sectionId =
+                  item.label === "People"
+                    ? "people"
+                    : "projects";
+
                 return (
                   <a
                     key={item.path}
-                    href="/#people"
+                    href={`/#${sectionId}`}
                     className="navbar-link"
-                    onClick={handlePeopleClick}
+                    onClick={(event) =>
+                      handleSectionClick(
+                        event,
+                        sectionId
+                      )
+                    }
                   >
                     {item.label}
                   </a>
@@ -214,6 +254,7 @@ function Navbar() {
                         : ""
                     }`
                   }
+                  onClick={closeMobileMenu}
                 >
                   {item.label}
                 </NavLink>
@@ -223,22 +264,19 @@ function Navbar() {
           </nav>
 
 
-          {/* =================================================
-              Desktop CTA
-              ================================================= */}
+          {/* Desktop CTA */}
 
           <NavLink
             to="/research"
             className="navbar-cta"
+            onClick={closeMobileMenu}
           >
             <span>Explore Research</span>
             <ArrowUpRight size={15} />
           </NavLink>
 
 
-          {/* =================================================
-              Mobile Menu Button
-              ================================================= */}
+          {/* Mobile Menu Button */}
 
           <button
             type="button"
@@ -266,9 +304,7 @@ function Navbar() {
       </header>
 
 
-      {/* =====================================================
-          Mobile Navigation
-          ===================================================== */}
+      {/* Mobile Navigation */}
 
       <div
         className={`mobile-navigation ${
@@ -279,14 +315,9 @@ function Navbar() {
       >
         <div className="mobile-navigation-inner">
 
-          {/* Navigation label */}
-
           <div className="mobile-navigation-label">
             Navigation
           </div>
-
-
-          {/* Navigation links */}
 
           <nav className="mobile-navigation-links">
 
@@ -294,15 +325,27 @@ function Navbar() {
               (item, index) => {
 
                 /*
-                 * People gets the temporary homepage
-                 * anchor behavior.
+                 * People and Projects.
                  */
-                if (item.label === "People") {
+                if (
+                  item.label === "People" ||
+                  item.label === "Projects"
+                ) {
+                  const sectionId =
+                    item.label === "People"
+                      ? "people"
+                      : "projects";
+
                   return (
                     <a
                       key={item.path}
-                      href="/#people"
-                      onClick={handlePeopleClick}
+                      href={`/#${sectionId}`}
+                      onClick={(event) =>
+                        handleSectionClick(
+                          event,
+                          sectionId
+                        )
+                      }
                       className="mobile-navigation-link"
                     >
                       <span className="mobile-navigation-number">
@@ -321,10 +364,6 @@ function Navbar() {
                   );
                 }
 
-                /*
-                 * All other navigation items use
-                 * React Router normally.
-                 */
                 return (
                   <NavLink
                     key={item.path}
@@ -351,10 +390,6 @@ function Navbar() {
 
           </nav>
 
-
-          {/* =================================================
-              Mobile Footer
-              ================================================= */}
 
           <div className="mobile-navigation-footer">
 

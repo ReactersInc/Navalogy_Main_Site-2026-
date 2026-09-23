@@ -1,22 +1,64 @@
-import { ArrowUpRight } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import { ArrowUpRight, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
 import people from "../../data/people.json";
 import PeopleGrid from "../people/PeopleGrid";
 
 function PeoplePreview() {
-  const featuredPeople = people.filter((person) => person.featured);
-  const researchMembers = people.filter((person) => !person.featured);
+  const visiblePeople = people.filter(
+    (person) => person.enabled !== false
+  );
 
-  if (people.length === 0) {
-    return null;
-  }
+  const featuredPeople = visiblePeople.filter(
+    (person) => person.membership === "lead"
+  );
+
+  const currentMembers = visiblePeople.filter(
+    (person) => person.membership === "current"
+  );
+
+  const pastMembers = visiblePeople.filter(
+    (person) =>
+      person.membership === "past" &&
+      person.passingYear !== null &&
+      person.passingYear !== undefined
+  );
+
+  const passingYears = useMemo(() => {
+    return [...new Set(pastMembers.map((person) => person.passingYear))]
+      .sort((a, b) => b - a);
+  }, [pastMembers]);
+
+  const [selectedYear, setSelectedYear] = useState(null);
+
+  useEffect(() => {
+    if (!selectedYear) return;
+
+    const element = document.getElementById(
+      "past-members-results"
+    );
+
+    if (!element) return;
+
+    requestAnimationFrame(() => {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    });
+  }, [selectedYear]);
+
+  const selectedPastMembers = selectedYear
+    ? pastMembers.filter(
+        (person) => person.passingYear === selectedYear
+      )
+    : [];
 
   return (
     <section className="people-preview-section">
       <div className="container">
 
-        {/* Section heading */}
+        {/* Section Header */}
         <div className="people-preview-header">
           <div className="people-preview-heading">
             <div className="section-label">
@@ -32,8 +74,9 @@ function PeoplePreview() {
 
           <div className="people-preview-intro">
             <p>
-              Researchers and engineers working across the systems,
-              security, and infrastructure that define Navalogy.
+              Researchers and engineers working across the
+              systems, security, and infrastructure that
+              define Navalogy.
             </p>
 
             <Link
@@ -46,8 +89,7 @@ function PeoplePreview() {
           </div>
         </div>
 
-
-        {/* Featured lead */}
+        {/* Lead Researcher */}
         {featuredPeople.length > 0 && (
           <div id="people" className="featured-person">
             {featuredPeople.map((person) => (
@@ -99,16 +141,83 @@ function PeoplePreview() {
           </div>
         )}
 
-        {/* Student / research members */}
-        {researchMembers.length > 0 && (
+        {/* Current Members */}
+        {currentMembers.length > 0 && (
           <div className="research-members">
             <div className="research-members-header">
               <div className="section-label">
-                Research Members
+                Current Student Members
               </div>
             </div>
 
-            <PeopleGrid people={researchMembers} />
+            <PeopleGrid people={currentMembers} />
+          </div>
+        )}
+
+        {/* Past Members */}
+        {passingYears.length > 0 && (
+          <div className="research-members past-members">
+
+            <div className="research-members-header">
+              <div>
+                <div className="section-label">
+                  Past Student Members
+                </div>
+
+                <p className="past-members-intro">
+                  Alumni and former members of the Navalogy
+                  research collective, organized by year.
+                </p>
+              </div>
+            </div>
+
+            {/* Passing Years */}
+            <div className="past-member-years">
+              {passingYears.map((year) => (
+                <button
+                  key={year}
+                  type="button"
+                  className={`past-member-year ${
+                    selectedYear === year
+                      ? "past-member-year-active"
+                      : ""
+                  }`}
+                  onClick={() => setSelectedYear(year)}
+                >
+                  <span>{year}</span>
+                  <ChevronRight size={16} />
+                </button>
+              ))}
+            </div>
+
+            {/* Selected Year */}
+            {selectedYear && (
+              <div
+                id="past-members-results"
+                className="past-members-results"
+              >
+                <div className="past-members-results-header">
+                  <div>
+                    <div className="section-label">
+                      Graduated / Completed
+                    </div>
+
+                    <h3>{selectedYear}</h3>
+                  </div>
+
+                  <button
+                    type="button"
+                    className="past-members-back"
+                    onClick={() => setSelectedYear(null)}
+                  >
+                    Back to years
+                  </button>
+                </div>
+
+                <PeopleGrid people={selectedPastMembers} />
+              </div>
+            )}
+
           </div>
         )}
 

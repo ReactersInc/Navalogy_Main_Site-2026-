@@ -15,6 +15,7 @@ import "./styles/featured-research.css";
 import "./styles/people.css";
 import "./styles/publications.css";
 import "./styles/footer.css";
+import "./styles/projects.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
