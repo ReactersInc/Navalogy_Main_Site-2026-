@@ -11,7 +11,18 @@
     "featured": true,
     "bio": "Dr. Nabajyoti Medhi is an Assistant Professor at Tezpur University. His research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing."
   },
-
+  {
+    "id": "Bishal Kumar Nath",
+    "name": "Birlang Bargayary",
+    "role": "PhD Scholar | Tezpur University",
+    "category": "PhD Scholar",
+    "membership": "current",
+    "enabled": true,
+    "image": "/images/people/bishalKumar.png",
+    "linkedin": "https://www.linkedin.com/in/bishalkumarnath/",
+    "featured": false,
+    "bio": "working on blockchain and NDN"
+  },
   {
     "id": "birlang-bargayary",
     "name": "Birlang Bargayary",
@@ -323,10 +334,10 @@
     "membership": "current",
     "enabled": true,
     "passingYear": 2026,
-    "image": "/images/people/sakil.jpg",
+    "image": "/images/people/sakil.png",
     "linkedin": "https://www.linkedin.com/in/sakil-aziz-2b0379256/",
     "featured": false,
-    "bio": ""
+    "bio": "Working on WiFI and kernel"
   },
 
   {

@@ -4,20 +4,20 @@
 
 .people-preview-section {
   position: relative;
-
   padding-block: var(--space-32);
-
   border-top: 1px solid var(--color-border);
-
   background: var(--color-bg);
 }
+
+
+/* =========================================================
+   Header
+   ========================================================= */
 
 .people-preview-header {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
-
   gap: 60px;
-
   margin-bottom: 58px;
 }
 
@@ -27,26 +27,20 @@
 
 .people-preview-title {
   margin-top: 20px;
-
   color: var(--color-text);
-
   font-size: clamp(42px, 5vw, 68px);
   line-height: 0.98;
-
   font-weight: 700;
-
   letter-spacing: -0.055em;
 }
 
 .people-preview-intro {
   align-self: end;
-
   max-width: 390px;
 }
 
 .people-preview-intro p {
   color: var(--color-text-secondary);
-
   font-size: 15px;
   line-height: 1.75;
 }
@@ -55,21 +49,15 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-
   margin-top: 24px;
   padding-bottom: 5px;
-
   border-bottom: 1px solid var(--color-border);
-
   color: var(--color-text-secondary);
-
   font-family: var(--font-mono);
   font-size: 0.6875rem;
   line-height: 1;
-
   letter-spacing: 0.07em;
   text-transform: uppercase;
-
   transition:
     color var(--transition-fast),
     border-color var(--transition-fast),
@@ -78,9 +66,7 @@
 
 .people-preview-link:hover {
   border-color: var(--color-accent);
-
   color: var(--color-accent);
-
   transform: translate(2px, -1px);
 }
 
@@ -96,26 +82,21 @@
 .featured-person-card {
   display: grid;
   grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
-
   min-height: 460px;
-
   border: 1px solid var(--color-border);
-
   background: var(--color-bg-card);
 }
 
 .featured-person-image {
   min-height: 460px;
-
   overflow: hidden;
-
   background: var(--color-bg-elevated);
 }
 
 .featured-person-image img {
   width: 100%;
   height: 100%;
-
+  display: block;
   object-fit: cover;
 
   filter: grayscale(100%);
@@ -130,7 +111,6 @@
 .featured-person-card:hover .featured-person-image img {
   filter: grayscale(0%);
   opacity: 1;
-
   transform: scale(1.02);
 }
 
@@ -138,50 +118,38 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   padding: 56px;
 }
 
 .featured-person-label {
   margin-bottom: 18px;
-
   color: var(--color-accent);
-
   font-family: var(--font-mono);
   font-size: 0.6875rem;
   line-height: 1.4;
-
   letter-spacing: 0.09em;
   text-transform: uppercase;
 }
 
 .featured-person-name {
   color: var(--color-text);
-
   font-size: clamp(32px, 4vw, 54px);
   line-height: 1;
-
   font-weight: 700;
-
   letter-spacing: -0.05em;
 }
 
 .featured-person-role {
   margin-top: 12px;
-
   color: var(--color-text-secondary);
-
   font-size: 1rem;
   line-height: 1.5;
 }
 
 .featured-person-bio {
   max-width: 620px;
-
   margin-top: 28px;
-
   color: var(--color-text-secondary);
-
   font-size: 0.9375rem;
   line-height: 1.75;
 }
@@ -190,23 +158,16 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-
   align-self: flex-start;
-
   margin-top: 30px;
   padding-bottom: 6px;
-
   border-bottom: 1px solid var(--color-border);
-
   color: var(--color-text-secondary);
-
   font-family: var(--font-mono);
   font-size: 0.6875rem;
   line-height: 1;
-
   letter-spacing: 0.07em;
   text-transform: uppercase;
-
   transition:
     color var(--transition-fast),
     border-color var(--transition-fast);
@@ -230,29 +191,26 @@
   margin-bottom: 28px;
 }
 
+
 /* =========================================================
-   People grid
+   People Grid
    ========================================================= */
 
 .people-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1px;
-
   border: 1px solid var(--color-border);
-
   background: var(--color-border);
 }
 
 
 /* =========================================================
-   Person card
+   Person Card
    ========================================================= */
 
 .person-card {
   min-width: 0;
-
   background: var(--color-bg-card);
 
   transition:
@@ -262,31 +220,32 @@
 
 .person-card:hover {
   background: var(--color-bg-card-hover);
-
   transform: translateY(-2px);
 }
 
 
 /* =========================================================
-   Person image
+   Person Image
    ========================================================= */
 
 .person-card-image {
   position: relative;
-
   width: 100%;
-  aspect-ratio: 4 / 5;
-
   overflow: hidden;
-
   background: var(--color-bg-elevated);
 }
 
 .person-card-image img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
 
-  object-fit: cover;
+  /*
+   * Do not use object-fit: cover here.
+   * The full portrait should remain visible.
+   */
+  object-fit: contain;
+  object-position: center;
 
   filter: grayscale(100%);
   opacity: 0.9;
@@ -300,18 +259,17 @@
 .person-card:hover .person-card-image img {
   filter: grayscale(0%);
   opacity: 1;
-
   transform: scale(1.025);
 }
 
 
 /* =========================================================
-   Image placeholder
+   Image Placeholder
    ========================================================= */
 
 .person-card-placeholder {
   width: 100%;
-  height: 100%;
+  min-height: 220px;
 
   display: grid;
   place-items: center;
@@ -324,7 +282,6 @@
     );
 
   color: var(--color-text-faint);
-
   font-family: var(--font-mono);
   font-size: 3rem;
 }
@@ -337,42 +294,34 @@
   height: 76px;
 
   border: 1px solid var(--color-border);
-
   color: var(--color-text-muted);
 }
 
 
 /* =========================================================
-   Person information
+   Person Information
    ========================================================= */
 
 .person-card-content {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-
-  gap: 20px;
-
-  padding: 20px 22px 22px;
+  gap: 16px;
+  padding: 18px 18px 20px;
 }
 
 .person-card-name {
   color: var(--color-text);
-
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   line-height: 1.2;
-
   font-weight: 700;
-
   letter-spacing: -0.025em;
 }
 
 .person-card-role {
   margin-top: 6px;
-
   color: var(--color-text-secondary);
-
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   line-height: 1.5;
 }
 
@@ -392,13 +341,11 @@
   padding: 0 9px;
 
   border: 1px solid var(--color-border);
-
   color: var(--color-text-muted);
 
   font-family: var(--font-mono);
   font-size: 0.625rem;
   line-height: 1;
-
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
@@ -410,48 +357,27 @@
 
 .person-card-linkedin:hover {
   border-color: var(--color-accent);
-
   color: var(--color-accent);
-
   background: rgba(200, 255, 61, 0.04);
 }
 
 
 /* =========================================================
-   Responsive
+   Homepage Section Anchors
    ========================================================= */
-
-@media (max-width: 900px) {
-  .people-preview-section {
-    padding-block: var(--space-24);
-  }
-
-  .people-preview-header {
-    grid-template-columns: 1fr;
-
-    gap: 24px;
-
-    margin-bottom: 46px;
-  }
-
-  .people-preview-intro {
-    max-width: 560px;
-  }
-
-  .people-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
 
 #people {
   scroll-margin-top: calc(var(--navbar-height) + 24px);
 }
 
+
+/* =========================================================
+   Past Members
+   ========================================================= */
+
 .past-members {
   margin-top: 6rem;
 }
-
-
 
 .past-members-intro {
   max-width: 560px;
@@ -474,15 +400,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   padding: 1.5rem;
+
   border: 0;
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+
   background: transparent;
   color: var(--text-primary);
+
   font: inherit;
   cursor: pointer;
   text-align: left;
+
   transition:
     background 180ms ease,
     color 180ms ease;
@@ -509,9 +440,11 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+
   gap: 2rem;
   margin-bottom: 2rem;
   padding-bottom: 1.25rem;
+
   border-bottom: 1px solid var(--border);
 }
 
@@ -534,6 +467,59 @@
   color: var(--text-primary);
 }
 
+
+/* =========================================================
+   Responsive — Tablet
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .people-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+/* =========================================================
+   Responsive — Medium
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .people-preview-section {
+    padding-block: var(--space-24);
+  }
+
+  .people-preview-header {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 46px;
+  }
+
+  .people-preview-intro {
+    max-width: 560px;
+  }
+
+  .people-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .featured-person-card {
+    grid-template-columns: 280px minmax(0, 1fr);
+  }
+
+  .featured-person-image {
+    min-height: 400px;
+  }
+
+  .featured-person-content {
+    padding: 40px;
+  }
+}
+
+
+/* =========================================================
+   Responsive — Mobile
+   ========================================================= */
+
 @media (max-width: 600px) {
   .people-preview-section {
     padding-block: 80px;
@@ -547,14 +533,9 @@
     grid-template-columns: 1fr;
   }
 
-  .person-card-image {
-    aspect-ratio: 5 / 4;
-  }
-
   .person-card-content {
     align-items: flex-start;
     flex-direction: column;
-
     padding: 20px;
   }
 
@@ -562,20 +543,6 @@
     margin-top: 4px;
   }
 
-    .featured-person-card {
-    grid-template-columns: 280px minmax(0, 1fr);
-  }
-
-  .featured-person-image {
-    min-height: 400px;
-  }
-
-  .featured-person-content {
-    padding: 40px;
-  }
-}
-
-@media (max-width: 600px) {
   .featured-person-card {
     grid-template-columns: 1fr;
   }
@@ -598,6 +565,10 @@
   }
 }
 
+
+/* =========================================================
+   Past Member Years — Mobile
+   ========================================================= */
 
 @media (max-width: 700px) {
   .past-member-years {
