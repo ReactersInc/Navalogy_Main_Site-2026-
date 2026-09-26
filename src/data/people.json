@@ -25,8 +25,8 @@
   },
   {
     "id": "birlang-bargayary",
-    "name": "Birlang Bargayary",
-    "role": "PhD Scholar | Tezpur University",
+    "name": "Dr. Birlang Bargayary",
+    "role": "PhD Pass Out | Tezpur University",
     "category": "PhD Scholar",
     "membership": "past",
     "enabled": true,
@@ -66,7 +66,7 @@
   {
     "id": "antara-singhal",
     "name": "Antara Singhal",
-    "role": "B.Tech 4th Year CSE | Tezpur University",
+    "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Student Researcher",
     "membership": "current",
     "enabled": false,
@@ -107,7 +107,7 @@
   {
     "id": "chandrima-paul",
     "name": "Chandrima Paul",
-    "role": "B.Tech 3rd Year CSE | Tezpur University",
+    "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Student Researcher",
     "membership": "past",
     "passingYear":2025,
@@ -121,7 +121,7 @@
   {
     "id": "dhritideepa-sarania",
     "name": "Dhritideepa Sarania",
-    "role": "B.Tech 3rd Year CSE | Tezpur University",
+    "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Student Researcher",
     "membership": "past",
     "passingYear":2025,
@@ -135,7 +135,7 @@
   {
     "id": "himanshu-sharma",
     "name": "Himanshu Sharma",
-    "role": "B.Tech 3rd Year CSE | Tezpur University",
+    "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Student Researcher",
     "membership": "past",
     "passingYear":2025,
@@ -162,7 +162,7 @@
   {
     "id": "praptipriya-phukon",
     "name": "PraptiPriya Phukon",
-    "role": "B.Tech 3rd Year CSE | Tezpur University",
+    "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Student Researcher",
     "membership": "past",
     "passingYear":2025,
@@ -176,7 +176,7 @@
   {
     "id": "pratik-chanda",
     "name": "Pratik Chanda",
-    "role": "B.Tech 4th Year EE | Tezpur University",
+    "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Student Researcher",
     "membership": "past",
     "enabled": false,
@@ -189,7 +189,7 @@
   {
     "id": "pritindra-das",
     "name": "Pritindra Das",
-    "role": "B.Tech 4th Year CSE | Tezpur University",
+    "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Student Researcher",
     "membership": "past",
     "passingYear":2023,
@@ -217,7 +217,7 @@
   {
     "id": "rajveer-chaudhary",
     "name": "Rajveer Chaudhary",
-    "role": "B.Tech CSE 3rd Year | Tezpur University",
+    "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Student Researcher",
     "membership": "past",
     "passingYear":2025,
@@ -231,7 +231,7 @@
   {
     "id": "vivek-rai",
     "name": "Vivek Rai",
-    "role": "B.Tech 3rd Year CSE | Tezpur University",
+    "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Student Researcher",
     "membership": "past",
     "passingYear":2025,
@@ -245,7 +245,7 @@
   {
     "id": "tanushree-das",
     "name": "Tanushree Das",
-    "role": "B.Tech 4th Year CSE | Tezpur University",
+    "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Student Researcher",
     "membership": "past",
     "enabled": false,
@@ -259,7 +259,7 @@
   {
     "id": "tridib-lochan-dutta",
     "name": "Tridib Lochan Dutta",
-    "role": "B.Tech 3rd Year ECE | Tezpur University",
+    "role": "Deputy Engineer | Bharat Electronics Limited.",
     "category": "Student Researcher",
     "membership": "past",
     "passingYear":2024,
@@ -267,13 +267,13 @@
     "image": "/images/people/tridib.png",
     "linkedin": "https://www.linkedin.com/in/tridib-lochan-dutta/",
     "featured": false,
-    "bio": "Tridib Lochan Dutta is a B.Tech student at Tezpur University."
+    "bio": "Deputy Engineer | Bharat Electronics Limited."
   },
 
   {
     "id": "vicky-deka",
     "name": "Vicky Deka",
-    "role": "B.Tech 4th Year CSE | Tezpur University",
+    "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Student Researcher",
     "membership": "past",
     "passingYear":2023,
@@ -315,7 +315,7 @@
   {
     "id": "kunal-das",
     "name": "Kunal Das",
-    "role": "Intern | ex-IQVIA",
+    "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Founding Member",
     "membership": "past",
     "enabled": true,
@@ -343,11 +343,11 @@
   {
     "id": "debangee-goswami",
     "name": "Debangee Goswami",
-    "role": "B.Tech EE 4th Year | Tezpur University",
+    "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Past Student Member",
     "membership": "past",
     "enabled": true,
-    "passingYear": 2022,
+    "passingYear": 2023,
     "image": "/images/people/debangee.png",
     "linkedin": "https://www.linkedin.com/in/debangee-goswami-601577222",
     "featured": false,
@@ -357,7 +357,7 @@
   {
     "id": "deekshith-kumar",
     "name": "Deekshith Kumar",
-    "role": "B.Tech 4th Year CSE | Tezpur University",
+    "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Past Student Member",
     "membership": "past",
     "enabled": true,
@@ -371,7 +371,7 @@
   {
     "id": "dibyaroop-das",
     "name": "Dibyaroop Das",
-    "role": "B.Tech 4th Year CSE | Tezpur University",
+    "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Past Student Member",
     "membership": "past",
     "enabled": true,
@@ -385,7 +385,7 @@
   {
     "id": "prabhatangshu-phukan",
     "name": "Prabhatangshu Phukan",
-    "role": "B.Tech EE 4th Year | Tezpur University",
+    "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Past Student Member",
     "membership": "past",
     "enabled": true,
