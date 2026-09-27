@@ -146,7 +146,7 @@ function PeoplePreview() {
           <div className="research-members">
             <div className="research-members-header">
               <div className="section-label">
-                Current Student Members
+                Current Members
               </div>
             </div>
 
@@ -161,7 +161,7 @@ function PeoplePreview() {
             <div className="research-members-header">
               <div>
                 <div className="section-label">
-                  Past Student Members
+                  Past Members
                 </div>
 
                 <p className="past-members-intro">

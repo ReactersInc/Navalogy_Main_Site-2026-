@@ -2,15 +2,44 @@
   {
     "id": "nabajyoti-medhi",
     "name": "Dr. Nabajyoti Medhi",
-    "role": "Lead",
+    "role": "Mentor",
     "category": "Faculty",
-    "membership": "lead",
+    "membership": "current",
     "enabled": true,
     "image": "/images/people/medhi-sir.png",
     "linkedin": "https://www.linkedin.com/in/nabajyoti-medhi-226421249",
     "featured": true,
     "bio": "Dr. Nabajyoti Medhi is an Assistant Professor at Tezpur University. His research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing."
   },
+
+
+  {
+    "id": "rhitu-raj-deori",
+    "name": "Rhitu Raj Deori",
+    "role": "PhD Scholar | Tezpur University",
+    "category": "PhD Scholar",
+    "membership": "current",
+    "enabled": true,
+    "image": "/images/people/RhituRaj.png",
+    "linkedin": "https://www.linkedin.com/in/rhitu-raj-deori-6a9568256/",
+    "featured": false,
+    "bio": "Working on security aspect of 5G network"
+  },
+
+  {
+    "id": "Dibyajyoti Baro",
+    "name": "Dibyojyoti baro",
+    "role": "B.Tech CSE 2nd Year | Tezpur University",
+    "category": "Past Student Member",
+    "membership": "current",
+    "enabled": true,
+    "passingYear": 2029,
+    "image": "/images/people/dibyojyoti.png",
+    "linkedin": "https://www.linkedin.com",
+    "featured": false,
+    "bio": "Prabhatangshu Phukan is a B.Tech student at Tezpur University."
+  },
+
   {
     "id": "Bishal Kumar Nath",
     "name": "Bishal Kumar Nath",
@@ -49,18 +78,58 @@
     "featured": false,
     "bio": "Priyanka Bardoloi is a Principal Engineer at Starhub, Singapore. She is currently pursuing her PhD in the Department of Computer Science and Engineering, Tezpur University. Her research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing."
   },
+  
+  {
+    "id": "sakil-aziz",
+    "name": "Sakil Aziz",
+    "role": "Asst. Project Engineer | IIT Guwahati",
+    "category": "Past Student Member",
+    "membership": "current",
+    "enabled": true,
+    "passingYear": 2026,
+    "image": "/images/people/sakil.png",
+    "linkedin": "https://www.linkedin.com/in/sakil-aziz-2b0379256/",
+    "featured": false,
+    "bio": "Working on WiFI and kernel"
+  },
 
-    {
-    "id": "rhitu-raj-deori",
-    "name": "Rhitu Raj Deori",
-    "role": "PhD Scholar | Tezpur University",
+  {
+    "id": "Angkurita Roy",
+    "name": "Angkurita Roy",
+    "role": "PhD Scholar | Tezpur University | Asst. Professor@Amity University",
+    "category": "Past Student Member",
+    "membership": "current",
+    "enabled": true,
+    "passingYear": null,
+    "image": "/images/people/angkurita.jpeg",
+    "linkedin": "https://www.linkedin.com",
+    "featured": false,
+    "bio": "Prabhatangshu Phukan is a B.Tech student at Tezpur University."
+  },
+  {
+    "id": "rajdeep-ghosh",
+    "name": "Rajdeep Ghosh",
+    "role": "PhD Scholar | IIT Kharagpur",
+    "category": "Research Member",
+    "membership": "current",
+    "passingYear":2022,
+    "enabled": true,
+    "image": "/images/people/rajdeep.png",
+    "linkedin": "https://in.linkedin.com/in/rajdeep-ghosh-301082175",
+    "featured": false,
+    "bio": "Rajdeep Ghosh holds an M.Tech in Computer Science from Calcutta University and was recognized as the Best Graduate of Tezpur University from the class of 2022."
+  },
+  {
+    "id": "kumarjit-ray",
+    "name": "Kumarjit Ray",
+    "role": "PhD Scholar | IIT Kharagpur | Former Asst. Prof. Siksha O Anusandhan",
     "category": "PhD Scholar",
     "membership": "current",
     "enabled": true,
-    "image": "/images/people/RhituRaj.png",
-    "linkedin": "https://www.linkedin.com/in/rhitu-raj-deori-6a9568256/",
+    "image": "/images/people/kumarjit.png",
+    "linkedin": "https://in.linkedin.com/in/kumarjit1997",
     "featured": false,
-    "bio": "Working on security aspect of 5G network"
+    "bio": "Kumarjit Ray is a PhD Scholar at IIT Kharagpur with a background as a former Assistant Professor at Siksha O Anusandhan."
   },
 
   {
@@ -146,18 +215,6 @@
     "bio": "Passionate about creating engaging experiences across web, mobile platforms, and game development."
   },
 
-  {
-    "id": "kumarjit-ray",
-    "name": "Kumarjit Ray",
-    "role": "PhD Scholar | IIT Kharagpur | Former Asst. Prof. Siksha O Anusandhan",
-    "category": "PhD Scholar",
-    "membership": "current",
-    "enabled": true,
-    "image": "/images/people/kumarjit.png",
-    "linkedin": "https://in.linkedin.com/in/kumarjit1997",
-    "featured": false,
-    "bio": "Kumarjit Ray is a PhD Scholar at IIT Kharagpur with a background as a former Assistant Professor at Siksha O Anusandhan."
-  },
 
   {
     "id": "praptipriya-phukon",
@@ -199,20 +256,6 @@
     "linkedin": "https://in.linkedin.com/in/pritindra-das",
     "featured": false,
     "bio": "Pritindra Das holds a B.Tech degree in Computer Science and Engineering from Tezpur University."
-  },
-
-  {
-    "id": "rajdeep-ghosh",
-    "name": "Rajdeep Ghosh",
-    "role": "PhD Scholar | IIT Kharagpur",
-    "category": "Research Member",
-    "membership": "current",
-    "passingYear":2022,
-    "enabled": true,
-    "image": "/images/people/rajdeep.png",
-    "linkedin": "https://in.linkedin.com/in/rajdeep-ghosh-301082175",
-    "featured": false,
-    "bio": "Rajdeep Ghosh holds an M.Tech in Computer Science from Calcutta University and was recognized as the Best Graduate of Tezpur University from the class of 2022."
   },
 
   {
@@ -327,19 +370,6 @@
     "bio": "Kunal Das is a former intern at IQVIA and was recognized for the Best B.Tech Project of the year 2022 from the ECE Department of Tezpur University."
   },
 
-  {
-    "id": "sakil-aziz",
-    "name": "Sakil Aziz",
-    "role": "Asst. Project Engineer | IIT Guwahati",
-    "category": "Past Student Member",
-    "membership": "current",
-    "enabled": true,
-    "passingYear": 2026,
-    "image": "/images/people/sakil.png",
-    "linkedin": "https://www.linkedin.com/in/sakil-aziz-2b0379256/",
-    "featured": false,
-    "bio": "Working on WiFI and kernel"
-  },
 
   {
     "id": "debangee-goswami",
@@ -391,33 +421,6 @@
     "membership": "past",
     "enabled": true,
     "passingYear": null,
-    "image": "/images/people/prabhat.png",
-    "linkedin": "https://www.linkedin.com/in/prabhatangshu-phukan",
-    "featured": false,
-    "bio": "Prabhatangshu Phukan is a B.Tech student at Tezpur University."
-  },
-{
-    "id": "Angkurita Roy",
-    "name": "Prabhatangshu Phukan",
-    "role": "PhD Scholar | Tezpur University | Asst. Professor@Amity University",
-    "category": "Past Student Member",
-    "membership": "current",
-    "enabled": true,
-    "passingYear": null,
-    "image": "/images/people/prabhat.png",
-    "linkedin": "https://www.linkedin.com/in/prabhatangshu-phukan",
-    "featured": false,
-    "bio": "Prabhatangshu Phukan is a B.Tech student at Tezpur University."
-  },
-
-{
-    "id": "Dibyajyoti Baro",
-    "name": "Dibyajyoti Baro",
-    "role": "B.Tech CSE 2nd Year | Tezpur University",
-    "category": "Past Student Member",
-    "membership": "current",
-    "enabled": true,
-    "passingYear": 2029,
     "image": "/images/people/prabhat.png",
     "linkedin": "https://www.linkedin.com/in/prabhatangshu-phukan",
     "featured": false,
