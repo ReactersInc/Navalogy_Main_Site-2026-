@@ -40,7 +40,7 @@
   {
     "id": "priyanka-bardoloi",
     "name": "Priyanka Bardoloi",
-    "role": "PhD Scholar | Tezpur University | Principal Engineer, Starhub",
+    "role": "PhD Scholar | Tezpur University | Principal Engineer@Starhub",
     "category": "PhD Scholar",
     "membership": "current",
     "enabled": true,
@@ -179,7 +179,8 @@
     "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Student Researcher",
     "membership": "past",
-    "enabled": false,
+    "passingYear":2023,
+    "enabled": true,
     "image": "/images/people/pratik.png",
     "linkedin": "https://in.linkedin.com/in/pratik-chanda-a498aa214",
     "featured": false,
@@ -347,7 +348,7 @@
     "category": "Past Student Member",
     "membership": "past",
     "enabled": true,
-    "passingYear": 2023,
+    "passingYear": 2022,
     "image": "/images/people/debangee.png",
     "linkedin": "https://www.linkedin.com/in/debangee-goswami-601577222",
     "featured": false,
@@ -394,5 +395,33 @@
     "linkedin": "https://www.linkedin.com/in/prabhatangshu-phukan",
     "featured": false,
     "bio": "Prabhatangshu Phukan is a B.Tech student at Tezpur University."
+  },
+{
+    "id": "Angkurita Roy",
+    "name": "Prabhatangshu Phukan",
+    "role": "PhD Scholar | Tezpur University | Asst. Professor@Amity University",
+    "category": "Past Student Member",
+    "membership": "current",
+    "enabled": true,
+    "passingYear": null,
+    "image": "/images/people/prabhat.png",
+    "linkedin": "https://www.linkedin.com/in/prabhatangshu-phukan",
+    "featured": false,
+    "bio": "Prabhatangshu Phukan is a B.Tech student at Tezpur University."
+  },
+
+{
+    "id": "Dibyajyoti Baro",
+    "name": "Dibyajyoti Baro",
+    "role": "B.Tech CSE 2nd Year | Tezpur University",
+    "category": "Past Student Member",
+    "membership": "current",
+    "enabled": true,
+    "passingYear": 2029,
+    "image": "/images/people/prabhat.png",
+    "linkedin": "https://www.linkedin.com/in/prabhatangshu-phukan",
+    "featured": false,
+    "bio": "Prabhatangshu Phukan is a B.Tech student at Tezpur University."
   }
+
 ]
