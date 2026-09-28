@@ -1,38 +1,8 @@
 # Navalogy Website --- Developer & Content Management Guide
 
-## 1. Overview
 
-Navalogy is a React + Vite website for a professional research/R&D
-collective.
 
-The project is intentionally structured so that **content is separated
-from presentation and React logic**.
-
-The main rule for future developers is:
-
-> **If you are changing research domains, people, publications,
-> navigation labels, or other site content, change the JSON data first.
-> Do not hard-code content inside React components unless the content is
-> genuinely structural.**
-
-The website uses:
-
--   React
--   Vite
--   React Router
--   Lucide React icons
--   JSON data files for editable content
--   Modular CSS files
--   Manrope for primary typography
--   DM Mono for technical/metadata typography
-
-The visual direction is a dark, editorial R&D interface with restrained
-lime accents, strong typography, grid systems, and minimal decorative
-effects.
-
-------------------------------------------------------------------------
-
-## 2. Project Structure
+## 1. Project Structure
 
 The current project is organized as follows:
 
