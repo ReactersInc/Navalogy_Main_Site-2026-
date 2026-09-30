@@ -65,6 +65,31 @@
     "featured": false,
     "bio": "Priyanka Bardoloi is a Principal Engineer at Starhub, Singapore. She is currently pursuing her PhD in the Department of Computer Science and Engineering, Tezpur University. Her research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing."
   },
+{
+    "id": "rajdeep-ghosh",
+    "name": "Rajdeep Ghosh",
+    "role": "PhD Scholar | IIT Kharagpur",
+    "category": "Research Member",
+    "membership": "current",
+    "passingYear":2022,
+    "enabled": true,
+    "image": "/images/people/rajdeep.png",
+    "linkedin": "https://in.linkedin.com/in/rajdeep-ghosh-301082175",
+    "featured": false,
+    "bio": "Rajdeep Ghosh holds an M.Tech in Computer Science from Calcutta University and was recognized as the Best Graduate of Tezpur University from the class of 2022."
+  },
+  {
+    "id": "kumarjit-ray",
+    "name": "Kumarjit Ray",
+    "role": "PhD Scholar | IIT Kharagpur | Former Asst. Prof. Siksha O Anusandhan",
+    "category": "PhD Scholar",
+    "membership": "current",
+    "enabled": true,
+    "image": "/images/people/kumarjit.png",
+    "linkedin": "https://in.linkedin.com/in/kumarjit1997",
+    "featured": false,
+    "bio": "Kumarjit Ray is a PhD Scholar at IIT Kharagpur with a background as a former Assistant Professor at Siksha O Anusandhan."
+  },
   
   {
     "id": "sakil-aziz",
@@ -93,31 +118,7 @@
     "featured": false,
     "bio": "Prabhatangshu Phukan is a B.Tech student at Tezpur University."
   },
-  {
-    "id": "rajdeep-ghosh",
-    "name": "Rajdeep Ghosh",
-    "role": "PhD Scholar | IIT Kharagpur",
-    "category": "Research Member",
-    "membership": "current",
-    "passingYear":2022,
-    "enabled": true,
-    "image": "/images/people/rajdeep.png",
-    "linkedin": "https://in.linkedin.com/in/rajdeep-ghosh-301082175",
-    "featured": false,
-    "bio": "Rajdeep Ghosh holds an M.Tech in Computer Science from Calcutta University and was recognized as the Best Graduate of Tezpur University from the class of 2022."
-  },
-  {
-    "id": "kumarjit-ray",
-    "name": "Kumarjit Ray",
-    "role": "PhD Scholar | IIT Kharagpur | Former Asst. Prof. Siksha O Anusandhan",
-    "category": "PhD Scholar",
-    "membership": "current",
-    "enabled": true,
-    "image": "/images/people/kumarjit.png",
-    "linkedin": "https://in.linkedin.com/in/kumarjit1997",
-    "featured": false,
-    "bio": "Kumarjit Ray is a PhD Scholar at IIT Kharagpur with a background as a former Assistant Professor at Siksha O Anusandhan."
-  },
+  
 {
     "id": "Dibyajyoti Baro",
     "name": "Dibyojyoti baro",
@@ -138,7 +139,7 @@
     "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Student Researcher",
     "membership": "current",
-    "enabled": false,
+    "enabled": true,
     "image": "/images/people/antara.png",
     "linkedin": "https://www.linkedin.com/in/antara-singhal",
     "featured": false,
@@ -292,7 +293,7 @@
     "role": "B.Tech CSE Pass Out | Tezpur University",
     "category": "Student Researcher",
     "membership": "past",
-    "enabled": false,
+    "enabled": true,
     "passingYear":2024,
     "image": "/images/people/tanushree.png",
     "linkedin": "https://www.linkedin.com/in/tanushree-das-80a927209",
