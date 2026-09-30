@@ -26,19 +26,6 @@
     "bio": "Working on security aspect of 5G network"
   },
 
-  {
-    "id": "Dibyajyoti Baro",
-    "name": "Dibyojyoti baro",
-    "role": "B.Tech CSE 2nd Year | Tezpur University",
-    "category": "Past Student Member",
-    "membership": "current",
-    "enabled": true,
-    "passingYear": 2029,
-    "image": "/images/people/dibyojyoti.png",
-    "linkedin": "https://www.linkedin.com",
-    "featured": false,
-    "bio": "Prabhatangshu Phukan is a B.Tech student at Tezpur University."
-  },
 
   {
     "id": "Bishal Kumar Nath",
@@ -130,6 +117,19 @@
     "linkedin": "https://in.linkedin.com/in/kumarjit1997",
     "featured": false,
     "bio": "Kumarjit Ray is a PhD Scholar at IIT Kharagpur with a background as a former Assistant Professor at Siksha O Anusandhan."
+  },
+{
+    "id": "Dibyajyoti Baro",
+    "name": "Dibyojyoti baro",
+    "role": "B.Tech CSE 2nd Year | Tezpur University",
+    "category": "Past Student Member",
+    "membership": "current",
+    "enabled": true,
+    "passingYear": 2029,
+    "image": "/images/people/dibyojyoti.png",
+    "linkedin": "https://www.linkedin.com",
+    "featured": false,
+    "bio": "Prabhatangshu Phukan is a B.Tech student at Tezpur University."
   },
 
   {
