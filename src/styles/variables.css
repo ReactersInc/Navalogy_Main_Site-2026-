@@ -13,8 +13,9 @@
   --color-text-muted: #69726e;
   --color-text-faint: #424946;
 
-  --color-accent: #c8ff3d;
-  --color-accent-hover: #d6ff70;
+  /* Navalogy brand blue */
+  --color-accent: #6FA2D9;
+  --color-accent-hover: #82B2E3;
 
   --color-border: rgba(255, 255, 255, 0.075);
   --color-border-hover: rgba(255, 255, 255, 0.16);
@@ -83,5 +84,5 @@
     0 20px 60px rgba(0, 0, 0, 0.22);
 
   --shadow-accent:
-    0 12px 40px rgba(200, 255, 61, 0.08);
+    0 12px 40px rgba(111, 162, 217, 0.10);
 }

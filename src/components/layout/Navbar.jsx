@@ -196,13 +196,15 @@ function Navbar() {
             className="navbar-brand"
             onClick={handleBrandClick}
           >
-            <span className="navbar-brand-mark">
-              N
-            </span>
+          <img
+            src="/images/navalogy_logo.png"
+            alt="Navalogy"
+            className="navbar-brand-logo"
+          />
 
             <span className="navbar-brand-text">
-              {site.name.toLowerCase()}
-              <span>.com</span>
+              {site.name}
+              {/* <span>.com</span> */}
             </span>
           </NavLink>
 
