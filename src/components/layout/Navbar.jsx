@@ -218,11 +218,11 @@ function Navbar() {
                * section navigation.
                */
               if (
-                item.label === "People" ||
+                item.label === "Club" ||
                 item.label === "Projects"
               ) {
                 const sectionId =
-                  item.label === "People"
+                  item.label === "Club"
                     ? "people"
                     : "projects";
 
@@ -328,11 +328,11 @@ function Navbar() {
                  * People and Projects.
                  */
                 if (
-                  item.label === "People" ||
+                  item.label === "Club" ||
                   item.label === "Projects"
                 ) {
                   const sectionId =
-                    item.label === "People"
+                    item.label === "Club"
                       ? "people"
                       : "projects";
 
