@@ -13,8 +13,18 @@ function PeoplePreview() {
     (person) => person.membership === "lead"
   );
 
+  // Current members excluding newbies
   const currentMembers = visiblePeople.filter(
-    (person) => person.membership === "current"
+    (person) =>
+      person.membership === "current" &&
+      person.subsection !== "newbies"
+  );
+
+  // Only members explicitly marked as newbies
+  const newbieMembers = visiblePeople.filter(
+    (person) =>
+      person.membership === "current" &&
+      person.subsection === "newbies"
   );
 
   const pastMembers = visiblePeople.filter(
@@ -55,7 +65,7 @@ function PeoplePreview() {
     : [];
 
   return (
-    <section className="people-preview-section">
+    <section id="people" className="people-preview-section">
       <div className="container">
 
         {/* Section Header */}
@@ -91,7 +101,7 @@ function PeoplePreview() {
 
         {/* Lead Researcher */}
         {featuredPeople.length > 0 && (
-          <div id="people" className="featured-person">
+          <div className="featured-person">
             {featuredPeople.map((person) => (
               <article
                 key={person.id}
@@ -144,6 +154,7 @@ function PeoplePreview() {
         {/* Current Members */}
         {currentMembers.length > 0 && (
           <div className="research-members">
+
             <div className="research-members-header">
               <div className="section-label">
                 Current Members
@@ -151,6 +162,24 @@ function PeoplePreview() {
             </div>
 
             <PeopleGrid people={currentMembers} />
+
+          </div>
+        )}
+
+        {/* Newbies */}
+        {newbieMembers.length > 0 && (
+          <div className="research-members newbies-members">
+
+            <div className="research-members-header">
+              <div>
+                <div className="section-label">
+                  Newbies
+                </div>
+              </div>
+            </div>
+
+            <PeopleGrid people={newbieMembers} />
+
           </div>
         )}
 
